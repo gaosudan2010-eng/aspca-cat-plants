@@ -1,0 +1,94 @@
+window.AI_DAILY_DATA = [
+  {
+    id: "2026-03-05-openai-google-anthropic",
+    date: "2026-03-05",
+    title: "AI 行业晨报：入口、Agent、企业落地进入加速期",
+    company: "OpenAI / Google / Anthropic",
+    priority: "P0",
+    tags: ["入口", "Agent", "企业AI"],
+    summary: "多家头部厂商同时推进产品入口和企业功能，竞争焦点转向“分发+执行”一体化。",
+    headlines: [
+      {
+        fact: "Google 在 Workspace 侧继续强化 Gemini 助理能力，并提升多模态摘要与执行链路。",
+        sources: ["https://workspace.google.com/products/gemini/", "https://workspace.google.com/blog/product-announcements/"],
+        insight: "文档、邮件、会议这些高频办公触点，正在变成 AI 的默认交互入口。",
+        opportunity: "优先做“邮件/文档/会议”三场景模板化 Agent，降低企业试点门槛。"
+      },
+      {
+        fact: "OpenAI 生态里对 GPTs 与 API 工作流的组合使用持续增长。",
+        sources: ["https://openai.com/index/introducing-gpts/", "https://platform.openai.com/docs/overview"],
+        insight: "“可配置能力 + 可编排流程”是团队级采用的关键，不再只靠单轮问答。",
+        opportunity: "设计“可视化流程+角色模板”能力，把 Prompt 工程资产化。"
+      },
+      {
+        fact: "Anthropic 在企业安全与可控性叙事上保持稳定输出。",
+        sources: ["https://www.anthropic.com/news", "https://trust.anthropic.com/"],
+        insight: "采购决策越来越看重审计、权限、可追踪，而不仅是模型分数。",
+        opportunity: "将“审计日志、权限矩阵、敏感操作白名单”前置为产品卖点。"
+      },
+      {
+        fact: "多家厂商加速推动 Agent 与外部工具连接（检索、表格、工单、CRM）。",
+        sources: ["https://openai.com/index/new-tools-for-building-agents/", "https://www.anthropic.com/news"],
+        insight: "AI 价值正从“给答案”转向“替你完成流程节点”。",
+        opportunity: "围绕最短闭环设计：信息获取 → 判断 → 执行 → 回写记录。"
+      },
+      {
+        fact: "市场对“成本/延迟/稳定性”三角的讨论明显增多。",
+        sources: ["https://platform.openai.com/docs/guides/latency-optimization", "https://cloud.google.com/architecture/"],
+        insight: "规模化部署阶段，工程指标会压过炫技功能，成为留存关键。",
+        opportunity: "建立模型路由策略：按任务等级自动选择模型与缓存策略。"
+      }
+    ],
+    actions: [
+      "本周完成 1 个办公场景 Agent MVP（建议从会议纪要到任务回写）",
+      "补齐企业版权限模型（部门、角色、数据域）",
+      "搭建日报自动化看板：输入新闻 → 输出事实/解读/机会点"
+    ]
+  },
+  {
+    id: "2026-03-04-baidu-alibaba-bytedance",
+    date: "2026-03-04",
+    title: "AI 行业日报：国产大厂从模型能力转向业务纵深",
+    company: "百度 / 阿里 / 字节",
+    priority: "P1",
+    tags: ["国产大模型", "应用层", "商业化"],
+    summary: "国内大厂持续推进模型与业务线深度融合，商业化节奏从“演示”转向“规模应用”。",
+    headlines: [
+      {
+        fact: "百度在搜索与企业服务场景推进文心能力融合。",
+        sources: ["https://yiyan.baidu.com/", "https://ir.baidu.com/"],
+        insight: "搜索入口+企业服务结合，具备天然流量与转化链路优势。",
+        opportunity: "针对“搜索导流到工作流”设计转化漏斗与任务模板。"
+      },
+      {
+        fact: "阿里在电商与云侧持续加强 AI 工具链协同。",
+        sources: ["https://www.aliyun.com/product/tongyi", "https://www.alibabagroup.com/"],
+        insight: "电商高频场景可快速验证 ROI，是 AI 功能迭代的理想土壤。",
+        opportunity: "优先切“商家运营 Copilot”：选品建议、投放文案、客服质检。"
+      },
+      {
+        fact: "字节在内容生产与推荐链路中的 AI 强化动作持续。",
+        sources: ["https://www.volcengine.com/product/doubao", "https://www.bytedance.com/en/"],
+        insight: "内容平台的核心竞争将变成“生成效率 × 分发效率”的乘积。",
+        opportunity: "构建“内容生成-审核-分发”一体化后台，提升复用率。"
+      },
+      {
+        fact: "行业侧对私有化部署与混合云诉求上升。",
+        sources: ["https://www.alibabacloud.com/solutions/hybrid-cloud", "https://cloud.baidu.com/product/wenxinworkshop"],
+        insight: "数据合规与延迟要求推动“云上+本地”混合架构成为标配。",
+        opportunity: "推出分层部署方案：公共问答走公有云，核心数据走私有节点。"
+      },
+      {
+        fact: "客户更加关注“可见收益”的 KPI（转化率、工时节省、投诉率）。",
+        sources: ["https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai", "https://www.gartner.com/en/topics/artificial-intelligence"],
+        insight: "讲故事已不够，必须可量化、可复盘、可持续迭代。",
+        opportunity: "建立 AI 项目评估模板：基线数据、实验对照、收益复盘。"
+      }
+    ],
+    actions: [
+      "明确 3 个可量化指标作为每期日报跟踪目标",
+      "沉淀行业方案模板（电商/内容/企业协同）",
+      "规划混合部署 PoC，验证安全与延迟指标"
+    ]
+  }
+];

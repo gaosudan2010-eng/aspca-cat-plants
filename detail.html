@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="AI 日报详情页：5条头条（事实、解读、机会点）与行动建议。" />
+  <title>日报详情</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#detailMain">跳到主要内容</a>
+  <div class="aurora" aria-hidden="true"></div>
+
+  <div class="container">
+    <header class="detail-top">
+      <a class="btn secondary" href="./index.html" aria-label="返回日报列表">← 返回列表</a>
+    </header>
+
+    <main id="detailMain" tabindex="-1">
+      <article id="detail"></article>
+    </main>
+
+    <footer class="footer">AI Daily Site · Detail</footer>
+  </div>
+
+  <script src="./data.js"></script>
+  <script>
+    const params = new URLSearchParams(location.search);
+    const id = params.get('id');
+    const data = window.AI_DAILY_DATA || [];
+    const target = data.find((d) => d.id === id);
+    const el = document.getElementById('detail');
+
+    function renderHeadline(item, idx) {
+      const safe = item || { fact: '待补充', insight: '待补充', opportunity: '待补充', sources: [] };
+      const sourceHtml = (safe.sources || []).length
+        ? `<p class="kv"><b>溯源：</b>${safe.sources.map((s) => `<a href="${s}" target="_blank" rel="noopener">来源</a>`).join(' · ')}</p>`
+        : '<p class="kv"><b>溯源：</b>待补充</p>';
+      return `
+        <li class="headline">
+          <h3>0${idx + 1}</h3>
+          <p><b>事实：</b>${safe.fact || '待补充'}</p>
+          ${sourceHtml}
+          <p class="kv"><b>解读：</b>${safe.insight || '待补充'}</p>
+          <p class="kv"><b>机会点：</b>${safe.opportunity || '待补充'}</p>
+        </li>
+      `;
+    }
+
+    if (!target) {
+      document.title = '日报不存在';
+      el.innerHTML = '<section class="card empty" role="alert">未找到该日报，请返回列表重试。</section>';
+    } else {
+      document.title = `${target.title} · 日报详情`;
+      const headlines = Array.from({ length: 5 }, (_, i) => (target.headlines || [])[i]);
+      el.innerHTML = `
+        <section class="card">
+          <div class="meta">
+            <span>${target.date}</span><span>·</span><span>${target.company}</span>
+          </div>
+          <h1>${target.title}</h1>
+          <p>${target.summary}</p>
+          <div class="tags">${(target.tags || []).map((t) => `<span class="tag">#${t}</span>`).join('')}</div>
+        </section>
+
+        <section class="card">
+          <h2 class="section-title">重点事实（含溯源）</h2>
+          <ol class="headline-list">
+            ${headlines.map((h, idx) => renderHeadline(h, idx)).join('')}
+          </ol>
+        </section>
+
+        <section class="card">
+          <h2 class="section-title">行动建议</h2>
+          <ul class="actions">
+            ${(target.actions || []).map((a) => `<li>${a}</li>`).join('')}
+          </ul>
+        </section>
+      `;
+    }
+  </script>
+</body>
+</html>
