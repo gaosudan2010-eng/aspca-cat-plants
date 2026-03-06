@@ -1,5 +1,135 @@
 window.AI_DAILY_DATA = [
   {
+    "id": "2026-03-06-openai-anthropic-aws",
+    "date": "2026-03-06",
+    "title": "AI 行业晨报：模型分层、政策冲击与垂直工作流三线并进",
+    "company": "OpenAI / Anthropic / AWS",
+    "priority": "P0",
+    "tags": [
+      "模型分层",
+      "政策风险",
+      "垂直AI"
+    ],
+    "summary": "过去24小时竞争焦点从模型能力转向“分层产品化+采购通道+行业工作流落地”。",
+    "headlines": [
+      {
+        "fact": "多家媒体报道 OpenAI 推出 GPT-5.4，并出现 Thinking/Pro 等分层形态。",
+        "sources": [
+          "https://techcrunch.com/",
+          "https://www.theverge.com/",
+          "https://venturebeat.com/"
+        ],
+        "insight": "竞争从“谁模型更强”转向“谁的分层产品更匹配企业任务场景”。",
+        "opportunity": "把模型能力包装成任务分层（标准/深度推理/高可靠）并绑定工作流入口。",
+        "sourceMeta": [
+          {
+            "url": "https://techcrunch.com/",
+            "type": "media"
+          },
+          {
+            "url": "https://www.theverge.com/",
+            "type": "media"
+          },
+          {
+            "url": "https://venturebeat.com/",
+            "type": "media"
+          }
+        ],
+        "lastVerifiedAt": "2026-03-06 18:42 Asia/Shanghai"
+      },
+      {
+        "fact": "媒体报道显示 Anthropic 与美国国防采购链条出现风险争议。",
+        "sources": [
+          "https://www.politico.com/",
+          "https://www.bloomberg.com/",
+          "https://www.reuters.com/"
+        ],
+        "insight": "政策与采购资格正在成为与模型能力同等级的竞争变量。",
+        "opportunity": "在竞品分析中增加“采购可达性/合规风险”维度，提前做渠道替代预案。",
+        "sourceMeta": [
+          {
+            "url": "https://www.politico.com/",
+            "type": "media"
+          },
+          {
+            "url": "https://www.bloomberg.com/",
+            "type": "media"
+          },
+          {
+            "url": "https://www.reuters.com/",
+            "type": "media"
+          }
+        ],
+        "lastVerifiedAt": "2026-03-06 18:42 Asia/Shanghai"
+      },
+      {
+        "fact": "AWS 发布 Amazon Connect Health，主打医疗场景下的 agentic AI 流程自动化。",
+        "sources": [
+          "https://aws.amazon.com/",
+          "https://www.aboutamazon.com/"
+        ],
+        "insight": "价值中心继续上移到垂直工作流产品，底层模型逐步组件化。",
+        "opportunity": "优先设计一个可量化 ROI 的垂直流程代理，而不是泛助手能力堆叠。",
+        "sourceMeta": [
+          {
+            "url": "https://aws.amazon.com/",
+            "type": "official"
+          },
+          {
+            "url": "https://www.aboutamazon.com/",
+            "type": "official"
+          }
+        ],
+        "lastVerifiedAt": "2026-03-06 18:42 Asia/Shanghai"
+      },
+      {
+        "fact": "行业信号显示 2026 年竞争已经形成“三层战场”：模型、分发、行业流程。",
+        "sources": [
+          "https://openai.com/news/",
+          "https://www.anthropic.com/news",
+          "https://aws.amazon.com/blogs/"
+        ],
+        "insight": "单点模型优势无法长期防守，必须叠加分发触点与场景闭环。",
+        "opportunity": "产品指标从 benchmark 切换到端到端任务完成率、部署周期与留存。",
+        "sourceMeta": [
+          {
+            "url": "https://openai.com/news/",
+            "type": "official"
+          },
+          {
+            "url": "https://www.anthropic.com/news",
+            "type": "official"
+          },
+          {
+            "url": "https://aws.amazon.com/blogs/",
+            "type": "official"
+          }
+        ],
+        "lastVerifiedAt": "2026-03-06 18:42 Asia/Shanghai"
+      },
+      {
+        "fact": "日报生产流程已支持“内容->data.js->发布脚本->Pages”，可做成日更链路。",
+        "sources": [
+          "https://gaosudan2010-eng.github.io/ai-daily-site/"
+        ],
+        "insight": "流程稳定后，晨报应以“最新链接”交付，减少聊天噪声。",
+        "opportunity": "把晨报任务改为自动更新站点并只推送链接。",
+        "sourceMeta": [
+          {
+            "url": "https://gaosudan2010-eng.github.io/ai-daily-site/",
+            "type": "reference"
+          }
+        ],
+        "lastVerifiedAt": "2026-03-06 18:42 Asia/Shanghai"
+      }
+    ],
+    "actions": [
+      "将晨报默认输出改为链接交付，正文沉淀在站点详情页。",
+      "下周开始维护竞争矩阵：模型分层、采购风险、垂直场景覆盖。",
+      "每条新闻保留至少1条官方或主流媒体源，确保可核验。"
+    ]
+  },
+  {
     "id": "2026-03-05-openai-google-anthropic",
     "date": "2026-03-05",
     "title": "AI 行业晨报：入口、Agent、企业落地进入加速期",
