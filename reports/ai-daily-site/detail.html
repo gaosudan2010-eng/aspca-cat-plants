@@ -27,21 +27,42 @@
     const target = data.find((d) => d.id === id);
     const el = document.getElementById('detail');
 
+    function getDomainChip(url) {
+      try {
+        const host = new URL(url).hostname.replace(/^www\./, '');
+        return `<a class="domain-chip" href="${url}" target="_blank" rel="noopener" title="${url}">${host}</a>`;
+      } catch {
+        return `<a class="domain-chip" href="${url}" target="_blank" rel="noopener">来源</a>`;
+      }
+    }
+
     function renderHeadline(item, idx) {
       const safe = item || { title: '待补充', summary: '待补充', insight: '待补充', opportunity: '待补充', sources: [] };
       const sourceHtml = (safe.sources || []).length
-        ? `<p class="kv"><b>溯源：</b>${safe.sources.map((s) => `<a href="${s}" target="_blank" rel="noopener">来源</a>`).join(' · ')}</p>`
-        : '<p class="kv"><b>溯源：</b>待补充</p>';
+        ? `<div class="source-row"><span class="block-label">来源</span><div class="domain-chips">${safe.sources.map((s) => getDomainChip(s)).join('')}</div></div>`
+        : '<div class="source-row"><span class="block-label">来源</span><span class="source-empty">待补充</span></div>';
       const headlineTitle = safe.title || `要点 ${idx + 1}`;
       const headlineSummary = safe.summary || safe.fact || '待补充';
       return `
         <li class="headline">
-          <h3>0${idx + 1}</h3>
-          <p class="kv"><b>标题：</b>${headlineTitle}</p>
-          <p><b>摘要：</b>${headlineSummary}</p>
+          <div class="headline-no">0${idx + 1}</div>
+          <section class="headline-block">
+            <p class="block-label">标题</p>
+            <h3 class="block-title">${headlineTitle}</h3>
+          </section>
+          <section class="headline-block">
+            <p class="block-label">摘要</p>
+            <p class="block-text">${headlineSummary}</p>
+          </section>
+          <section class="headline-block">
+            <p class="block-label">解读</p>
+            <p class="block-text kv-strong">${safe.insight || '待补充'}</p>
+          </section>
+          <section class="headline-block">
+            <p class="block-label">机会点</p>
+            <p class="block-text opp">${safe.opportunity || '待补充'}</p>
+          </section>
           ${sourceHtml}
-          <p class="kv"><b>解读：</b>${safe.insight || '待补充'}</p>
-          <p class="kv"><b>机会点：</b>${safe.opportunity || '待补充'}</p>
         </li>
       `;
     }
