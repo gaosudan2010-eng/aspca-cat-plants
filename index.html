@@ -8,27 +8,20 @@
   <link rel="stylesheet" href="./styles.css" />
 </head>
 <body>
-  <a class="skip-link" href="#mainContent">跳到主要内容</a>
-
-  <div class="aurora" aria-hidden="true"></div>
   <div class="container">
     <header class="header" role="banner">
       <div>
-        <p class="eyebrow">AI DAILY BRIEFING</p>
-        <h1 class="title">🥧 AI 日报中心</h1>
-        <p class="sub">5条头条 · 事实 / 解读 / 机会点 · 行动建议</p>
+        <h1 class="title">AI 日报</h1>
+        <p class="sub">标题 · 摘要 · 来源（可点击）</p>
       </div>
-      <div class="pill" aria-live="polite">当前结果 <span id="totalCount">0</span> 篇</div>
     </header>
 
-    <main id="mainContent" class="layout" tabindex="-1">
+    <main id="mainContent" tabindex="-1">
       <section aria-label="日报列表" style="max-width:100%">
-        <h2 class="section-title">日报列表（按时间倒序）</h2>
+        <h2 class="section-title">日报列表</h2>
         <div id="reportList" aria-live="polite"></div>
       </section>
     </main>
-
-    <footer class="footer">AI Daily Site · Local Static Version</footer>
   </div>
 
   <script src="./data.js"></script>
@@ -37,18 +30,17 @@
     const data = [...rawData].sort((a, b) => b.date.localeCompare(a.date));
 
     const reportListEl = document.getElementById('reportList');
-    const totalCountEl = document.getElementById('totalCount');
 
     function render() {
-      totalCountEl.textContent = String(data.length);
       if (!data.length) {
         reportListEl.innerHTML = '<div class="card empty" role="status">暂无日报数据。</div>';
         return;
       }
 
       reportListEl.innerHTML = data
-        .map(
-          (item) => `
+        .map((item) => {
+          const firstSource = item?.headlines?.[0]?.sources?.[0] || '';
+          return `
           <article class="card report-card" role="link" tabindex="0" onclick="window.location.href='./detail.html?id=${encodeURIComponent(item.id)}'" onkeydown="if(event.key==='Enter'){window.location.href='./detail.html?id=${encodeURIComponent(item.id)}'}">
             <div class="meta">
               <span>${item.date}</span>
@@ -57,9 +49,10 @@
             </div>
             <h3>${item.title}</h3>
             <p>${item.summary}</p>
+            ${firstSource ? `<a class="text-link" href="${firstSource}" target="_blank" rel="noopener" onclick="event.stopPropagation()">来源</a>` : ''}
           </article>
-        `
-        )
+        `;
+        })
         .join('');
     }
 
