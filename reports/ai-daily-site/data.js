@@ -1,5 +1,125 @@
 window.AI_DAILY_DATA = [
   {
+    "id": "2026-03-06-late-openai-google-nvidia",
+    "date": "2026-03-06",
+    "title": "AI 行业晚报：模型能力走向工程化，企业落地看执行效率",
+    "company": "OpenAI / Google / NVIDIA",
+    "priority": "P0",
+    "tags": [
+      "企业落地",
+      "Agent工程化",
+      "基础设施"
+    ],
+    "summary": "头部厂商同时在模型、开发工具和基础设施层更新，竞争焦点继续从“会不会回答”转向“能不能稳定完成任务”。",
+    "headlines": [
+      {
+        "fact": "OpenAI 开发者文档持续强化 Agents / Tools 能力，强调可编排、可观测的任务执行链路。",
+        "sources": [
+          "https://platform.openai.com/docs/overview",
+          "https://openai.com/index/new-tools-for-building-agents/"
+        ],
+        "insight": "企业采用门槛正在从 Prompt 设计转向流程编排与执行治理。",
+        "opportunity": "产品侧优先建设“任务模板+执行日志+失败回放”，提升可交付性。",
+        "sourceMeta": [
+          {
+            "url": "https://platform.openai.com/docs/overview",
+            "type": "official"
+          },
+          {
+            "url": "https://openai.com/index/new-tools-for-building-agents/",
+            "type": "official"
+          }
+        ],
+        "lastVerifiedAt": "2026-03-06 23:20 Asia/Shanghai"
+      },
+      {
+        "fact": "Google 持续在 Workspace/Gemini 体系推进办公场景 AI 一体化体验。",
+        "sources": [
+          "https://workspace.google.com/products/gemini/",
+          "https://workspace.google.com/blog/product-announcements/"
+        ],
+        "insight": "高频办公入口会持续吞噬独立 AI 工具的使用时长。",
+        "opportunity": "优先做“邮件/文档/会议”跨场景自动化能力，而不是单点问答。",
+        "sourceMeta": [
+          {
+            "url": "https://workspace.google.com/products/gemini/",
+            "type": "official"
+          },
+          {
+            "url": "https://workspace.google.com/blog/product-announcements/",
+            "type": "official"
+          }
+        ],
+        "lastVerifiedAt": "2026-03-06 23:20 Asia/Shanghai"
+      },
+      {
+        "fact": "NVIDIA 持续更新企业 AI 计算与推理基础设施叙事，强调端到端性能与部署效率。",
+        "sources": [
+          "https://www.nvidia.com/en-us/ai/",
+          "https://blogs.nvidia.com/"
+        ],
+        "insight": "应用竞争背后，算力与推理链路优化仍是规模化落地的核心约束。",
+        "opportunity": "在方案评估中加入“吞吐/延迟/成本”三指标基线，形成统一路由策略。",
+        "sourceMeta": [
+          {
+            "url": "https://www.nvidia.com/en-us/ai/",
+            "type": "official"
+          },
+          {
+            "url": "https://blogs.nvidia.com/",
+            "type": "official"
+          }
+        ],
+        "lastVerifiedAt": "2026-03-06 23:20 Asia/Shanghai"
+      },
+      {
+        "fact": "多家厂商都在强调企业级安全、权限与审计，采购标准进一步抬高。",
+        "sources": [
+          "https://trust.anthropic.com/",
+          "https://cloud.google.com/security",
+          "https://learn.microsoft.com/en-us/azure/security/"
+        ],
+        "insight": "AI 功能差异在收敛，治理能力会成为 B 端续费关键。",
+        "opportunity": "把“权限模型+审计报表+敏感操作白名单”打包成默认能力。",
+        "sourceMeta": [
+          {
+            "url": "https://trust.anthropic.com/",
+            "type": "official"
+          },
+          {
+            "url": "https://cloud.google.com/security",
+            "type": "official"
+          },
+          {
+            "url": "https://learn.microsoft.com/en-us/azure/security/",
+            "type": "official"
+          }
+        ],
+        "lastVerifiedAt": "2026-03-06 23:20 Asia/Shanghai"
+      },
+      {
+        "fact": "ai-daily-site 已形成“数据文件更新→脚本发布→Pages 生效”的固定交付路径。",
+        "sources": [
+          "https://gaosudan2010-eng.github.io/ai-daily-site/"
+        ],
+        "insight": "日报价值来自稳定交付与可追溯，而非一次性内容堆砌。",
+        "opportunity": "把日报升级为产品化运营资产：固定模板、固定时点、固定质检。",
+        "sourceMeta": [
+          {
+            "url": "https://gaosudan2010-eng.github.io/ai-daily-site/",
+            "type": "reference"
+          }
+        ],
+        "lastVerifiedAt": "2026-03-06 23:20 Asia/Shanghai"
+      }
+    ],
+    "actions": [
+      "明天起将日报产出固定为：3 条官方源 + 2 条主流媒体源。",
+      "每期增加一行运营指标：阅读量、点击来源数、页面停留时长。",
+      "按周复盘：哪些公司信号最能转化为产品动作。"
+    ]
+  },
+  {
     "id": "2026-03-06-openai-anthropic-aws",
     "date": "2026-03-06",
     "title": "AI 行业晨报：模型分层、政策冲击与垂直工作流三线并进",
