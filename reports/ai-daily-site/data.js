@@ -18,7 +18,7 @@ window.AI_DAILY_DATA = [
           "https://www.reuters.com/technology/artificial-intelligence/openai/",
           "https://techcrunch.com/tag/openai/"
         ],
-        "insight": "开发者竞争重心仍从"回答质量"转向"任务完成率与可观测性"。",
+        "insight": "开发者竞争重心仍从“回答质量”转向“任务完成率与可观测性”。",
         "opportunity": "把执行日志、失败回放、重试策略做成默认能力，提升企业上线信心。",
         "sourceMeta": [
           {
@@ -428,7 +428,7 @@ window.AI_DAILY_DATA = [
         ],
         "lastVerifiedAt": "2026-03-06 23:20 Asia/Shanghai",
         "title": "OpenAI Agents 工具链进入可编排阶段",
-        "summary": "OpenAI 在开发者文档和 Agents 工具叙事中，持续强调"模型能力 + 工具调用 + 执行可观测"的一体化链路。相比早期只看模型回答质量，现在更强调任务编排、执行追踪和失败恢复。"
+        "summary": "OpenAI 在开发者文档和 Agents 工具叙事中，持续强调“模型能力 + 工具调用 + 执行可观测”的一体化链路。相比早期只看模型回答质量，现在更强调任务编排、执行追踪和失败恢复。"
       },
       {
         "fact": "Google 持续在 Workspace/Gemini 体系推进办公场景 AI 一体化体验。",
