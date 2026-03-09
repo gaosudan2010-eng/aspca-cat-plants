@@ -21,6 +21,9 @@
         <h2 class="section-title">今日总览</h2>
         <div id="dailyOverview" aria-live="polite"></div>
       </section>
+      <section aria-label="筛选器" style="max-width:100%">
+        <div id="filters" class="filter-row" aria-live="polite"></div>
+      </section>
       <section aria-label="日报列表" style="max-width:100%">
         <h2 class="section-title">日报列表</h2>
         <div id="reportList" aria-live="polite"></div>
@@ -34,34 +37,52 @@
       const data = [...rawData].sort((a, b) => b.date.localeCompare(a.date));
       const reportListEl = document.getElementById('reportList');
       const overviewEl = document.getElementById('dailyOverview');
+      const filtersEl = document.getElementById('filters');
+      let activeSignal = 'ALL';
 
-      function render() {
+      function renderFilters() {
+        const signals = ['ALL', 'S', 'A', 'B'];
+        filtersEl.innerHTML = signals.map(s => `
+          <button class="chip ${activeSignal===s ? 'chip-active' : ''}" onclick="window.__setSignal('${s}')">${s==='ALL' ? '全部信号' : `信号 ${s}`}</button>
+        `).join('');
+      }
+
+      window.__setSignal = function(s){
+        activeSignal = s;
+        renderFilters();
+        renderList();
+      }
+
+      function renderOverview() {
         if (!data.length) {
-          reportListEl.innerHTML = '<div class="card empty" role="status">暂无日报数据。</div>';
           overviewEl.innerHTML = '';
           return;
         }
-
         const latest = data[0];
         const riskTemp = latest.riskTemperature || '未标注';
         const mainLine = latest.dailyMainline || latest.summary || '暂无主线';
         const updatedAt = latest.lastUpdatedAt || latest.headlines?.[0]?.lastVerifiedAt || '未标注';
         const dailyConclusion = latest.dailyConclusion || latest.title;
-
         overviewEl.innerHTML = `
-          <article class="card">
+          <article class="card overview-card">
             <div class="meta"><span>主结论</span><span>·</span><span>风险温度：${riskTemp}</span><span>·</span><span>更新时间：${updatedAt}</span></div>
             <h3>${dailyConclusion}</h3>
             <p>${mainLine}</p>
           </article>
         `;
+      }
 
-        reportListEl.innerHTML = data
-          .map((item) => {
-            const firstSource = item?.headlines?.[0]?.sources?.[0] || '';
-            const signal = item.signalLevel || 'B';
-            const whyNow = item.whyNow || '';
-            return `
+      function renderList() {
+        const view = activeSignal === 'ALL' ? data : data.filter(i => (i.signalLevel || 'B') === activeSignal);
+        if (!view.length) {
+          reportListEl.innerHTML = '<div class="card empty" role="status">当前筛选条件下暂无日报。</div>';
+          return;
+        }
+        reportListEl.innerHTML = view.map((item) => {
+          const firstSource = item?.headlines?.[0]?.sources?.[0] || '';
+          const signal = item.signalLevel || 'B';
+          const whyNow = item.whyNow || '';
+          return `
             <article class="card report-card" role="link" tabindex="0" onclick="window.location.href='./detail.html?id=${encodeURIComponent(item.id)}'" onkeydown="if(event.key==='Enter'){window.location.href='./detail.html?id=${encodeURIComponent(item.id)}'}">
               <div class="meta">
                 <span>${item.date}</span>
@@ -72,15 +93,16 @@
               </div>
               <h3>${item.title}</h3>
               <p>${item.summary}</p>
-              ${whyNow ? `<p><strong>为什么今天重要：</strong>${whyNow}</p>` : ''}
+              ${whyNow ? `<p class="why-now"><strong>为什么今天重要：</strong>${whyNow}</p>` : ''}
               ${firstSource ? `<a class="text-link" href="${firstSource}" target="_blank" rel="noopener" onclick="event.stopPropagation()">来源</a>` : ''}
             </article>
           `;
-          })
-          .join('');
+        }).join('');
       }
 
-      render();
+      renderOverview();
+      renderFilters();
+      renderList();
     }
 
     const script = document.createElement('script');
