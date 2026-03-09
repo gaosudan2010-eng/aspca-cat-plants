@@ -14,10 +14,7 @@ window.AI_DAILY_DATA = [
     "headlines": [
       {
         "fact": "OpenAI 官方文档与产品页面持续强调 Agents、Tools 与可编排执行能力。",
-        "sources": [
-          "https://www.reuters.com/technology/openai/",
-          "https://techcrunch.com/tag/openai/"
-        ],
+        "sources": [],
         "insight": "开发者竞争重心仍从“回答质量”转向“任务完成率与可观测性”。",
         "opportunity": "把执行日志、失败回放、重试策略做成默认能力，提升企业上线信心。",
         "sourceMeta": [
@@ -38,10 +35,7 @@ window.AI_DAILY_DATA = [
       },
       {
         "fact": "Microsoft 继续在 Microsoft 365 与安全产品中强化 Copilot 企业能力与管理控制。",
-        "sources": [
-          "https://www.microsoft.com/en-us/microsoft-365/copilot",
-          "https://www.microsoft.com/en-us/security/business/ai-machine-learning/microsoft-copilot-for-security"
-        ],
+        "sources": [],
         "insight": "办公入口被平台化后，独立产品需要更强跨系统执行价值。",
         "opportunity": "优先做“邮件-文档-任务系统”联动自动化，避免沦为单点插件。",
         "sourceMeta": [
@@ -62,10 +56,7 @@ window.AI_DAILY_DATA = [
       },
       {
         "fact": "Google 持续推进 Gemini 与 Workspace 深度整合，覆盖邮件、文档、会议等高频场景。",
-        "sources": [
-          "https://workspace.google.com/products/gemini/",
-          "https://workspace.google.com/blog/product-announcements/"
-        ],
+        "sources": [],
         "insight": "AI 正成为办公主流程的默认能力，而非外挂功能。",
         "opportunity": "围绕“会议纪要→行动项→任务回写”打造端到端闭环模板。",
         "sourceMeta": [
@@ -86,10 +77,7 @@ window.AI_DAILY_DATA = [
       },
       {
         "fact": "Anthropic 公开信息继续强调企业信任、安全与合规能力建设。",
-        "sources": [
-          "https://www.anthropic.com/news",
-          "https://trust.anthropic.com/"
-        ],
+        "sources": [],
         "insight": "B 端竞争已进入“模型能力 + 治理能力”双门槛阶段。",
         "opportunity": "将权限模型、审计日志、合规模板前置到企业版标准包。",
         "sourceMeta": [
@@ -110,10 +98,7 @@ window.AI_DAILY_DATA = [
       },
       {
         "fact": "NVIDIA 官方 AI 页面与博客持续强调训练/推理基础设施与部署效率。",
-        "sources": [
-          "https://www.nvidia.com/en-us/ai/",
-          "https://blogs.nvidia.com/"
-        ],
+        "sources": [],
         "insight": "应用层创新速度仍受制于算力成本、吞吐与时延约束。",
         "opportunity": "建立按任务等级的模型路由与预算机制，平衡效果、速度与成本。",
         "sourceMeta": [
@@ -160,10 +145,7 @@ window.AI_DAILY_DATA = [
     "headlines": [
       {
         "fact": "Reuters 报道美国政府部分机构正在调整对 Anthropic 与 OpenAI 的采购与使用路径，政策因素正在直接影响模型供应格局。",
-        "sources": [
-          "https://www.reuters.com/business/us-treasury-ending-all-use-anthropic-products-says-bessent-2026-03-02/",
-          "https://www.reuters.com/technology/artificial-intelligence/"
-        ],
+        "sources": [],
         "insight": "企业客户在选型时会同步评估模型能力与政策/采购稳定性，技术优势不再是唯一决策项。",
         "opportunity": "在供应商策略中加入“政策可用性备份方案”，避免单一模型供应风险。",
         "sourceMeta": [
@@ -182,9 +164,7 @@ window.AI_DAILY_DATA = [
       },
       {
         "fact": "TechCrunch 报道 Microsoft、Google、Amazon 对外表示 Claude 仍可在非国防场景继续向客户提供。",
-        "sources": [
-          "https://techcrunch.com/2026/03/06/microsoft-anthropic-claude-remains-available-to-customers-except-the-defense-department/"
-        ],
+        "sources": [],
         "insight": "头部云与平台方正在通过“场景化可用范围”维持企业市场连续性。",
         "opportunity": "面向企业客户明确标注“可用场景边界”，降低采购不确定性。",
         "sourceMeta": [
@@ -199,9 +179,7 @@ window.AI_DAILY_DATA = [
       },
       {
         "fact": "Reuters OpenAI 专题页显示，NVIDIA CEO 对 OpenAI 与 Anthropic 的后续资本投入释放更审慎信号。",
-        "sources": [
-          "https://www.reuters.com/technology/openai/"
-        ],
+        "sources": [],
         "insight": "资本与算力资源配置更趋务实，市场将更关注可持续商业化与IPO路径。",
         "opportunity": "在竞品追踪中新增“融资/资本动作”维度，预判生态合作变化。",
         "sourceMeta": [
@@ -216,10 +194,7 @@ window.AI_DAILY_DATA = [
       },
       {
         "fact": "OpenAI 仍在官方开发者文档与工具页强调 Agents 与工具调用能力，持续推进可编排执行链路。",
-        "sources": [
-          "https://www.reuters.com/technology/openai/",
-          "https://techcrunch.com/tag/openai/"
-        ],
+        "sources": [],
         "insight": "开发者侧竞争焦点继续从“会回答”转向“能执行、可观测、可复盘”。",
         "opportunity": "产品默认提供任务日志、失败回放和重试机制，提升企业上线信心。",
         "sourceMeta": [
@@ -238,10 +213,7 @@ window.AI_DAILY_DATA = [
       },
       {
         "fact": "Google 持续推进 Gemini 与 Workspace 的产品整合，AI 正进一步嵌入邮件、文档和会议等高频办公入口。",
-        "sources": [
-          "https://workspace.google.com/products/gemini/",
-          "https://workspace.google.com/blog/product-announcements/"
-        ],
+        "sources": [],
         "insight": "办公入口的原生 AI 化将持续压缩独立工具的生存空间。",
         "opportunity": "优先设计跨场景自动化闭环（邮件→文档→会议→任务回写），提升留存与复购。",
         "sourceMeta": [
@@ -280,10 +252,7 @@ window.AI_DAILY_DATA = [
     "headlines": [
       {
         "fact": "Microsoft 持续将 Copilot 能力嵌入 Microsoft 365 办公主流程，并强调企业安全与管理控制。",
-        "sources": [
-          "https://www.microsoft.com/en-us/microsoft-365/copilot",
-          "https://www.microsoft.com/en-us/security/business/ai-machine-learning/microsoft-copilot-for-security"
-        ],
+        "sources": [],
         "insight": "AI 入口正在被高频办公套件固化，独立工具必须提供跨系统执行价值才能留存。",
         "opportunity": "优先构建“Office/IM/任务系统”联动的流程自动化，而非单点问答功能。",
         "sourceMeta": [
@@ -302,10 +271,7 @@ window.AI_DAILY_DATA = [
       },
       {
         "fact": "OpenAI 开发者体系继续围绕 Agents 与工具调用能力推进，重点强调可编排、可观测、可复盘。",
-        "sources": [
-          "https://www.reuters.com/technology/openai/",
-          "https://techcrunch.com/tag/openai/"
-        ],
+        "sources": [],
         "insight": "企业采购标准从“模型分数”转向“任务完成率与可运营性”。",
         "opportunity": "在产品中默认提供执行日志、失败回放与重试策略，提高上线可信度。",
         "sourceMeta": [
@@ -324,10 +290,7 @@ window.AI_DAILY_DATA = [
       },
       {
         "fact": "Google 持续推动 Gemini 与 Workspace 深度整合，覆盖邮件、文档、会议等核心办公场景。",
-        "sources": [
-          "https://workspace.google.com/products/gemini/",
-          "https://workspace.google.com/blog/product-announcements/"
-        ],
+        "sources": [],
         "insight": "AI 与办公入口绑定后，产品竞争将由“功能差异”转向“端到端流程效率”。",
         "opportunity": "围绕“邮件→文档→会议→任务回写”设计跨场景自动化模板。",
         "sourceMeta": [
@@ -346,10 +309,7 @@ window.AI_DAILY_DATA = [
       },
       {
         "fact": "Anthropic 持续强化 Claude 的企业可信与治理叙事，强调安全、合规和透明度。",
-        "sources": [
-          "https://www.anthropic.com/news",
-          "https://trust.anthropic.com/"
-        ],
+        "sources": [],
         "insight": "B 端竞争里，治理能力正在成为与模型能力同等级的采购门槛。",
         "opportunity": "将权限控制、审计日志和合规模板作为企业版默认能力打包。",
         "sourceMeta": [
@@ -368,10 +328,7 @@ window.AI_DAILY_DATA = [
       },
       {
         "fact": "NVIDIA 持续推进企业 AI 基础设施叙事，聚焦训练/推理效率与规模化部署能力。",
-        "sources": [
-          "https://www.nvidia.com/en-us/ai/",
-          "https://blogs.nvidia.com/"
-        ],
+        "sources": [],
         "insight": "应用层创新速度最终受制于算力效率与推理成本，基础设施仍是胜负手。",
         "opportunity": "建立按任务等级的模型路由与算力预算机制，优化吞吐、延迟与成本三角。",
         "sourceMeta": [
@@ -410,10 +367,7 @@ window.AI_DAILY_DATA = [
     "headlines": [
       {
         "fact": "OpenAI 开发者文档持续强化 Agents / Tools 能力，强调可编排、可观测的任务执行链路。",
-        "sources": [
-          "https://www.reuters.com/technology/openai/",
-          "https://techcrunch.com/tag/openai/"
-        ],
+        "sources": [],
         "insight": "企业采用门槛正在从 Prompt 设计转向流程编排与执行治理。",
         "opportunity": "产品侧优先建设“任务模板+执行日志+失败回放”，提升可交付性。",
         "sourceMeta": [
@@ -432,10 +386,7 @@ window.AI_DAILY_DATA = [
       },
       {
         "fact": "Google 持续在 Workspace/Gemini 体系推进办公场景 AI 一体化体验。",
-        "sources": [
-          "https://workspace.google.com/products/gemini/",
-          "https://workspace.google.com/blog/product-announcements/"
-        ],
+        "sources": [],
         "insight": "高频办公入口会持续吞噬独立 AI 工具的使用时长。",
         "opportunity": "优先做“邮件/文档/会议”跨场景自动化能力，而不是单点问答。",
         "sourceMeta": [
@@ -454,10 +405,7 @@ window.AI_DAILY_DATA = [
       },
       {
         "fact": "NVIDIA 持续更新企业 AI 计算与推理基础设施叙事，强调端到端性能与部署效率。",
-        "sources": [
-          "https://www.nvidia.com/en-us/ai/",
-          "https://blogs.nvidia.com/"
-        ],
+        "sources": [],
         "insight": "应用竞争背后，算力与推理链路优化仍是规模化落地的核心约束。",
         "opportunity": "在方案评估中加入“吞吐/延迟/成本”三指标基线，形成统一路由策略。",
         "sourceMeta": [
@@ -476,11 +424,7 @@ window.AI_DAILY_DATA = [
       },
       {
         "fact": "多家厂商都在强调企业级安全、权限与审计，采购标准进一步抬高。",
-        "sources": [
-          "https://trust.anthropic.com/",
-          "https://cloud.google.com/security",
-          "https://learn.microsoft.com/en-us/azure/security/"
-        ],
+        "sources": [],
         "insight": "AI 功能差异在收敛，治理能力会成为 B 端续费关键。",
         "opportunity": "把“权限模型+审计报表+敏感操作白名单”打包成默认能力。",
         "sourceMeta": [
@@ -503,9 +447,7 @@ window.AI_DAILY_DATA = [
       },
       {
         "fact": "ai-daily-site 已形成“数据文件更新→脚本发布→Pages 生效”的固定交付路径。",
-        "sources": [
-          "https://gaosudan2010-eng.github.io/ai-daily-site/"
-        ],
+        "sources": [],
         "insight": "日报价值来自稳定交付与可追溯，而非一次性内容堆砌。",
         "opportunity": "把日报升级为产品化运营资产：固定模板、固定时点、固定质检。",
         "sourceMeta": [
@@ -540,11 +482,7 @@ window.AI_DAILY_DATA = [
     "headlines": [
       {
         "fact": "多家媒体报道 OpenAI 推出 GPT-5.4，并出现 Thinking/Pro 等分层形态。",
-        "sources": [
-          "https://techcrunch.com/",
-          "https://www.theverge.com/",
-          "https://venturebeat.com/"
-        ],
+        "sources": [],
         "insight": "竞争从“谁模型更强”转向“谁的分层产品更匹配企业任务场景”。",
         "opportunity": "把模型能力包装成任务分层（标准/深度推理/高可靠）并绑定工作流入口。",
         "sourceMeta": [
@@ -567,11 +505,7 @@ window.AI_DAILY_DATA = [
       },
       {
         "fact": "媒体报道显示 Anthropic 与美国国防采购链条出现风险争议。",
-        "sources": [
-          "https://www.politico.com/",
-          "https://www.bloomberg.com/",
-          "https://www.reuters.com/"
-        ],
+        "sources": [],
         "insight": "政策与采购资格正在成为与模型能力同等级的竞争变量。",
         "opportunity": "在竞品分析中增加“采购可达性/合规风险”维度，提前做渠道替代预案。",
         "sourceMeta": [
@@ -594,10 +528,7 @@ window.AI_DAILY_DATA = [
       },
       {
         "fact": "AWS 发布 Amazon Connect Health，主打医疗场景下的 agentic AI 流程自动化。",
-        "sources": [
-          "https://aws.amazon.com/",
-          "https://www.aboutamazon.com/"
-        ],
+        "sources": [],
         "insight": "价值中心继续上移到垂直工作流产品，底层模型逐步组件化。",
         "opportunity": "优先设计一个可量化 ROI 的垂直流程代理，而不是泛助手能力堆叠。",
         "sourceMeta": [
@@ -616,11 +547,7 @@ window.AI_DAILY_DATA = [
       },
       {
         "fact": "行业信号显示 2026 年竞争已经形成“三层战场”：模型、分发、行业流程。",
-        "sources": [
-          "https://www.reuters.com/technology/openai/",
-          "https://www.anthropic.com/news",
-          "https://aws.amazon.com/blogs/"
-        ],
+        "sources": [],
         "insight": "单点模型优势无法长期防守，必须叠加分发触点与场景闭环。",
         "opportunity": "产品指标从 benchmark 切换到端到端任务完成率、部署周期与留存。",
         "sourceMeta": [
@@ -643,9 +570,7 @@ window.AI_DAILY_DATA = [
       },
       {
         "fact": "日报生产流程已支持“内容->data.js->发布脚本->Pages”，可做成日更链路。",
-        "sources": [
-          "https://gaosudan2010-eng.github.io/ai-daily-site/"
-        ],
+        "sources": [],
         "insight": "流程稳定后，晨报应以“最新链接”交付，减少聊天噪声。",
         "opportunity": "把晨报任务改为自动更新站点并只推送链接。",
         "sourceMeta": [
@@ -680,10 +605,7 @@ window.AI_DAILY_DATA = [
     "headlines": [
       {
         "fact": "Google 在 Workspace 侧继续强化 Gemini 助理能力，并提升多模态摘要与执行链路。",
-        "sources": [
-          "https://workspace.google.com/products/gemini/",
-          "https://workspace.google.com/blog/product-announcements/"
-        ],
+        "sources": [],
         "insight": "文档、邮件、会议这些高频办公触点，正在变成 AI 的默认交互入口。",
         "opportunity": "优先做“邮件/文档/会议”三场景模板化 Agent，降低企业试点门槛。",
         "sourceMeta": [
@@ -700,10 +622,7 @@ window.AI_DAILY_DATA = [
       },
       {
         "fact": "OpenAI 生态里对 GPTs 与 API 工作流的组合使用持续增长。",
-        "sources": [
-          "https://techcrunch.com/tag/openai/",
-          "https://www.reuters.com/technology/openai/"
-        ],
+        "sources": [],
         "insight": "“可配置能力 + 可编排流程”是团队级采用的关键，不再只靠单轮问答。",
         "opportunity": "设计“可视化流程+角色模板”能力，把 Prompt 工程资产化。",
         "sourceMeta": [
@@ -720,10 +639,7 @@ window.AI_DAILY_DATA = [
       },
       {
         "fact": "Anthropic 在企业安全与可控性叙事上保持稳定输出。",
-        "sources": [
-          "https://www.anthropic.com/news",
-          "https://trust.anthropic.com/"
-        ],
+        "sources": [],
         "insight": "采购决策越来越看重审计、权限、可追踪，而不仅是模型分数。",
         "opportunity": "将“审计日志、权限矩阵、敏感操作白名单”前置为产品卖点。",
         "sourceMeta": [
@@ -740,10 +656,7 @@ window.AI_DAILY_DATA = [
       },
       {
         "fact": "多家厂商加速推动 Agent 与外部工具连接（检索、表格、工单、CRM）。",
-        "sources": [
-          "https://techcrunch.com/tag/openai/",
-          "https://www.anthropic.com/news"
-        ],
+        "sources": [],
         "insight": "AI 价值正从“给答案”转向“替你完成流程节点”。",
         "opportunity": "围绕最短闭环设计：信息获取 → 判断 → 执行 → 回写记录。",
         "sourceMeta": [
@@ -760,10 +673,7 @@ window.AI_DAILY_DATA = [
       },
       {
         "fact": "市场对“成本/延迟/稳定性”三角的讨论明显增多。",
-        "sources": [
-          "https://platform.openai.com/docs/guides/latency-optimization",
-          "https://cloud.google.com/architecture/"
-        ],
+        "sources": [],
         "insight": "规模化部署阶段，工程指标会压过炫技功能，成为留存关键。",
         "opportunity": "建立模型路由策略：按任务等级自动选择模型与缓存策略。",
         "sourceMeta": [
@@ -800,10 +710,7 @@ window.AI_DAILY_DATA = [
     "headlines": [
       {
         "fact": "百度在搜索与企业服务场景推进文心能力融合。",
-        "sources": [
-          "https://yiyan.baidu.com/",
-          "https://ir.baidu.com/"
-        ],
+        "sources": [],
         "insight": "搜索入口+企业服务结合，具备天然流量与转化链路优势。",
         "opportunity": "针对“搜索导流到工作流”设计转化漏斗与任务模板。",
         "sourceMeta": [
@@ -820,10 +727,7 @@ window.AI_DAILY_DATA = [
       },
       {
         "fact": "阿里在电商与云侧持续加强 AI 工具链协同。",
-        "sources": [
-          "https://www.aliyun.com/product/tongyi",
-          "https://www.alibabagroup.com/"
-        ],
+        "sources": [],
         "insight": "电商高频场景可快速验证 ROI，是 AI 功能迭代的理想土壤。",
         "opportunity": "优先切“商家运营 Copilot”：选品建议、投放文案、客服质检。",
         "sourceMeta": [
@@ -840,10 +744,7 @@ window.AI_DAILY_DATA = [
       },
       {
         "fact": "字节在内容生产与推荐链路中的 AI 强化动作持续。",
-        "sources": [
-          "https://www.volcengine.com/product/doubao",
-          "https://www.bytedance.com/en/"
-        ],
+        "sources": [],
         "insight": "内容平台的核心竞争将变成“生成效率 × 分发效率”的乘积。",
         "opportunity": "构建“内容生成-审核-分发”一体化后台，提升复用率。",
         "sourceMeta": [
@@ -860,10 +761,7 @@ window.AI_DAILY_DATA = [
       },
       {
         "fact": "行业侧对私有化部署与混合云诉求上升。",
-        "sources": [
-          "https://www.alibabacloud.com/solutions/hybrid-cloud",
-          "https://cloud.baidu.com/product/wenxinworkshop"
-        ],
+        "sources": [],
         "insight": "数据合规与延迟要求推动“云上+本地”混合架构成为标配。",
         "opportunity": "推出分层部署方案：公共问答走公有云，核心数据走私有节点。",
         "sourceMeta": [
@@ -880,10 +778,7 @@ window.AI_DAILY_DATA = [
       },
       {
         "fact": "客户更加关注“可见收益”的 KPI（转化率、工时节省、投诉率）。",
-        "sources": [
-          "https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai",
-          "https://www.gartner.com/en/topics/artificial-intelligence"
-        ],
+        "sources": [],
         "insight": "讲故事已不够，必须可量化、可复盘、可持续迭代。",
         "opportunity": "建立 AI 项目评估模板：基线数据、实验对照、收益复盘。",
         "sourceMeta": [
