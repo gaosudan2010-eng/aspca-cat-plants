@@ -24,39 +24,44 @@
     </main>
   </div>
 
-  <script src="./data.js"></script>
   <script>
-    const rawData = window.AI_DAILY_DATA || [];
-    const data = [...rawData].sort((a, b) => b.date.localeCompare(a.date));
+    function initDailyData() {
+      const rawData = window.AI_DAILY_DATA || [];
+      const data = [...rawData].sort((a, b) => b.date.localeCompare(a.date));
+      const reportListEl = document.getElementById('reportList');
 
-    const reportListEl = document.getElementById('reportList');
+      function render() {
+        if (!data.length) {
+          reportListEl.innerHTML = '<div class="card empty" role="status">暂无日报数据。</div>';
+          return;
+        }
 
-    function render() {
-      if (!data.length) {
-        reportListEl.innerHTML = '<div class="card empty" role="status">暂无日报数据。</div>';
-        return;
+        reportListEl.innerHTML = data
+          .map((item) => {
+            const firstSource = item?.headlines?.[0]?.sources?.[0] || '';
+            return `
+            <article class="card report-card" role="link" tabindex="0" onclick="window.location.href='./detail.html?id=${encodeURIComponent(item.id)}'" onkeydown="if(event.key==='Enter'){window.location.href='./detail.html?id=${encodeURIComponent(item.id)}'}">
+              <div class="meta">
+                <span>${item.date}</span>
+                <span>·</span>
+                <span>${item.company}</span>
+              </div>
+              <h3>${item.title}</h3>
+              <p>${item.summary}</p>
+              ${firstSource ? `<a class="text-link" href="${firstSource}" target="_blank" rel="noopener" onclick="event.stopPropagation()">来源</a>` : ''}
+            </article>
+          `;
+          })
+          .join('');
       }
 
-      reportListEl.innerHTML = data
-        .map((item) => {
-          const firstSource = item?.headlines?.[0]?.sources?.[0] || '';
-          return `
-          <article class="card report-card" role="link" tabindex="0" onclick="window.location.href='./detail.html?id=${encodeURIComponent(item.id)}'" onkeydown="if(event.key==='Enter'){window.location.href='./detail.html?id=${encodeURIComponent(item.id)}'}">
-            <div class="meta">
-              <span>${item.date}</span>
-              <span>·</span>
-              <span>${item.company}</span>
-            </div>
-            <h3>${item.title}</h3>
-            <p>${item.summary}</p>
-            ${firstSource ? `<a class="text-link" href="${firstSource}" target="_blank" rel="noopener" onclick="event.stopPropagation()">来源</a>` : ''}
-          </article>
-        `;
-        })
-        .join('');
+      render();
     }
 
-    render();
+    const script = document.createElement('script');
+    script.src = `./data.js?v=${Date.now()}`;
+    script.onload = initDailyData;
+    document.body.appendChild(script);
   </script>
 </body>
 </html>
