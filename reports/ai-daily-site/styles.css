@@ -215,6 +215,29 @@ body {
   border-radius: 6px;
 }
 
+.mainline {
+  margin-top: 10px;
+  padding: 10px;
+  background: #f4f8ff;
+  border-radius: 8px;
+}
+
+.subline {
+  margin-top: 10px;
+  padding: 10px;
+  background: #fafafa;
+  border-radius: 8px;
+}
+
+.subline ul {
+  margin: 8px 0 0;
+  padding-left: 18px;
+}
+
+.subline li {
+  margin-bottom: 6px;
+}
+
 @media (max-width: 600px) {
   .title { font-size: 36px; }
   .container { padding: 30px 15px; }

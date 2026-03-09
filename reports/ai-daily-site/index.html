@@ -23,6 +23,8 @@
       </section>
       <section aria-label="筛选器" style="max-width:100%">
         <div id="filters" class="filter-row" aria-live="polite"></div>
+        <div id="companyFilters" class="filter-row" aria-live="polite"></div>
+        <div id="tagFilters" class="filter-row" aria-live="polite"></div>
       </section>
       <section aria-label="日报列表" style="max-width:100%">
         <h2 class="section-title">日报列表</h2>
@@ -38,17 +40,42 @@
       const reportListEl = document.getElementById('reportList');
       const overviewEl = document.getElementById('dailyOverview');
       const filtersEl = document.getElementById('filters');
+      const companyFiltersEl = document.getElementById('companyFilters');
+      const tagFiltersEl = document.getElementById('tagFilters');
       let activeSignal = 'ALL';
+      let activeCompany = 'ALL';
+      let activeTag = 'ALL';
+
+      const companyPool = ['ALL', ...new Set(data.map(i => i.company).filter(Boolean))].slice(0, 7);
+      const tagPool = ['ALL', ...new Set(data.flatMap(i => i.tags || []).filter(Boolean))].slice(0, 10);
 
       function renderFilters() {
         const signals = ['ALL', 'S', 'A', 'B'];
         filtersEl.innerHTML = signals.map(s => `
           <button class="chip ${activeSignal===s ? 'chip-active' : ''}" onclick="window.__setSignal('${s}')">${s==='ALL' ? '全部信号' : `信号 ${s}`}</button>
         `).join('');
+
+        companyFiltersEl.innerHTML = companyPool.map(c => `
+          <button class="chip ${activeCompany===c ? 'chip-active' : ''}" onclick="window.__setCompany('${c.replace(/'/g, "\\'")}')">${c==='ALL' ? '全部公司' : c}</button>
+        `).join('');
+
+        tagFiltersEl.innerHTML = tagPool.map(t => `
+          <button class="chip ${activeTag===t ? 'chip-active' : ''}" onclick="window.__setTag('${t}')">${t==='ALL' ? '全部主题' : t}</button>
+        `).join('');
       }
 
       window.__setSignal = function(s){
         activeSignal = s;
+        renderFilters();
+        renderList();
+      }
+      window.__setCompany = function(c){
+        activeCompany = c;
+        renderFilters();
+        renderList();
+      }
+      window.__setTag = function(t){
+        activeTag = t;
         renderFilters();
         renderList();
       }
@@ -63,17 +90,28 @@
         const mainLine = latest.dailyMainline || latest.summary || '暂无主线';
         const updatedAt = latest.lastUpdatedAt || latest.headlines?.[0]?.lastVerifiedAt || '未标注';
         const dailyConclusion = latest.dailyConclusion || latest.title;
+        const mainHeadline = latest.headlines?.[0];
+        const subHeadlines = (latest.headlines || []).slice(1, 4);
+
         overviewEl.innerHTML = `
           <article class="card overview-card">
             <div class="meta"><span>主结论</span><span>·</span><span>风险温度：${riskTemp}</span><span>·</span><span>更新时间：${updatedAt}</span></div>
             <h3>${dailyConclusion}</h3>
             <p>${mainLine}</p>
+            ${mainHeadline ? `<div class="mainline"><strong>主线事件：</strong>${mainHeadline.title || mainHeadline.summary || ''}</div>` : ''}
+            ${subHeadlines.length ? `<div class="subline"><strong>分线快讯：</strong><ul>${subHeadlines.map(h => `<li>${h.title || h.summary || ''}</li>`).join('')}</ul></div>` : ''}
           </article>
         `;
       }
 
       function renderList() {
-        const view = activeSignal === 'ALL' ? data : data.filter(i => (i.signalLevel || 'B') === activeSignal);
+        const view = data.filter(i => {
+          const signalOK = activeSignal === 'ALL' || (i.signalLevel || 'B') === activeSignal;
+          const companyOK = activeCompany === 'ALL' || i.company === activeCompany;
+          const tagOK = activeTag === 'ALL' || (i.tags || []).includes(activeTag);
+          return signalOK && companyOK && tagOK;
+        });
+
         if (!view.length) {
           reportListEl.innerHTML = '<div class="card empty" role="status">当前筛选条件下暂无日报。</div>';
           return;
