@@ -43,12 +43,16 @@
           : '<div class="source-row"><span class="block-label">来源</span><span class="source-empty">待补充</span></div>';
         const headlineTitle = safe.title || `要点 ${idx + 1}`;
         const headlineSummary = safe.summary || safe.fact || '待补充';
+        const signal = safe.signalLevel || 'B';
+        const whyNow = safe.whyNow || '';
         return `
           <li class="headline">
             <div class="headline-no">0${idx + 1}</div>
             <section class="headline-block">
               <p class="block-label">标题</p>
               <h3 class="block-title">${headlineTitle}</h3>
+              <p class="block-text"><strong>信号等级：</strong>${signal}</p>
+              ${whyNow ? `<p class="block-text"><strong>为什么今天重要：</strong>${whyNow}</p>` : ''}
             </section>
             <section class="headline-block">
               <p class="block-label">摘要</p>
@@ -73,13 +77,17 @@
       } else {
         document.title = `${target.title} · 日报详情`;
         const headlines = Array.from({ length: 5 }, (_, i) => (target.headlines || [])[i]);
+        const riskTemp = target.riskTemperature || '未标注';
+        const updatedAt = target.lastUpdatedAt || target.headlines?.[0]?.lastVerifiedAt || '未标注';
+        const dailyConclusion = target.dailyConclusion || target.title;
+        const dailyMainline = target.dailyMainline || target.summary;
         el.innerHTML = `
           <section class="card">
             <div class="meta">
-              <span>${target.date}</span><span>·</span><span>${target.company}</span>
+              <span>${target.date}</span><span>·</span><span>${target.company}</span><span>·</span><span>风险温度：${riskTemp}</span><span>·</span><span>更新时间：${updatedAt}</span>
             </div>
-            <h1>${target.title}</h1>
-            <p>${target.summary}</p>
+            <h1>${dailyConclusion}</h1>
+            <p>${dailyMainline}</p>
           </section>
 
           <section class="card">
