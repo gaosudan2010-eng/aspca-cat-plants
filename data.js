@@ -16,7 +16,7 @@ window.AI_DAILY_DATA = [
         "fact": "OpenAI 官方文档与产品页面持续强调 Agents、Tools 与可编排执行能力。",
         "sources": [
           "https://platform.openai.com/docs/overview",
-          "https://openai.com/index/new-tools-for-building-agents/"
+          "https://openai.com/news/"
         ],
         "insight": "开发者竞争重心仍从“回答质量”转向“任务完成率与可观测性”。",
         "opportunity": "把执行日志、失败回放、重试策略做成默认能力，提升企业上线信心。",
@@ -26,7 +26,7 @@ window.AI_DAILY_DATA = [
             "type": "official"
           },
           {
-            "url": "https://openai.com/index/new-tools-for-building-agents/",
+            "url": "https://openai.com/news/",
             "type": "official"
           }
         ],
@@ -218,7 +218,7 @@ window.AI_DAILY_DATA = [
         "fact": "OpenAI 仍在官方开发者文档与工具页强调 Agents 与工具调用能力，持续推进可编排执行链路。",
         "sources": [
           "https://platform.openai.com/docs/overview",
-          "https://openai.com/index/new-tools-for-building-agents/"
+          "https://openai.com/news/"
         ],
         "insight": "开发者侧竞争焦点继续从“会回答”转向“能执行、可观测、可复盘”。",
         "opportunity": "产品默认提供任务日志、失败回放和重试机制，提升企业上线信心。",
@@ -228,7 +228,7 @@ window.AI_DAILY_DATA = [
             "type": "official"
           },
           {
-            "url": "https://openai.com/index/new-tools-for-building-agents/",
+            "url": "https://openai.com/news/",
             "type": "official"
           }
         ],
@@ -304,7 +304,7 @@ window.AI_DAILY_DATA = [
         "fact": "OpenAI 开发者体系继续围绕 Agents 与工具调用能力推进，重点强调可编排、可观测、可复盘。",
         "sources": [
           "https://platform.openai.com/docs/overview",
-          "https://openai.com/index/new-tools-for-building-agents/"
+          "https://openai.com/news/"
         ],
         "insight": "企业采购标准从“模型分数”转向“任务完成率与可运营性”。",
         "opportunity": "在产品中默认提供执行日志、失败回放与重试策略，提高上线可信度。",
@@ -314,7 +314,7 @@ window.AI_DAILY_DATA = [
             "type": "official"
           },
           {
-            "url": "https://openai.com/index/new-tools-for-building-agents/",
+            "url": "https://openai.com/news/",
             "type": "official"
           }
         ],
@@ -412,7 +412,7 @@ window.AI_DAILY_DATA = [
         "fact": "OpenAI 开发者文档持续强化 Agents / Tools 能力，强调可编排、可观测的任务执行链路。",
         "sources": [
           "https://platform.openai.com/docs/overview",
-          "https://openai.com/index/new-tools-for-building-agents/"
+          "https://openai.com/news/"
         ],
         "insight": "企业采用门槛正在从 Prompt 设计转向流程编排与执行治理。",
         "opportunity": "产品侧优先建设“任务模板+执行日志+失败回放”，提升可交付性。",
@@ -422,7 +422,7 @@ window.AI_DAILY_DATA = [
             "type": "official"
           },
           {
-            "url": "https://openai.com/index/new-tools-for-building-agents/",
+            "url": "https://openai.com/news/",
             "type": "official"
           }
         ],
@@ -701,14 +701,14 @@ window.AI_DAILY_DATA = [
       {
         "fact": "OpenAI 生态里对 GPTs 与 API 工作流的组合使用持续增长。",
         "sources": [
-          "https://openai.com/index/introducing-gpts/",
+          "https://openai.com/news/",
           "https://platform.openai.com/docs/overview"
         ],
         "insight": "“可配置能力 + 可编排流程”是团队级采用的关键，不再只靠单轮问答。",
         "opportunity": "设计“可视化流程+角色模板”能力，把 Prompt 工程资产化。",
         "sourceMeta": [
           {
-            "url": "https://openai.com/index/introducing-gpts/",
+            "url": "https://openai.com/news/",
             "type": "official"
           },
           {
@@ -741,14 +741,14 @@ window.AI_DAILY_DATA = [
       {
         "fact": "多家厂商加速推动 Agent 与外部工具连接（检索、表格、工单、CRM）。",
         "sources": [
-          "https://openai.com/index/new-tools-for-building-agents/",
+          "https://openai.com/news/",
           "https://www.anthropic.com/news"
         ],
         "insight": "AI 价值正从“给答案”转向“替你完成流程节点”。",
         "opportunity": "围绕最短闭环设计：信息获取 → 判断 → 执行 → 回写记录。",
         "sourceMeta": [
           {
-            "url": "https://openai.com/index/new-tools-for-building-agents/",
+            "url": "https://openai.com/news/",
             "type": "official"
           },
           {
