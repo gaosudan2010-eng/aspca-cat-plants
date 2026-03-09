@@ -88,26 +88,26 @@
         const dailyConclusion = target.dailyConclusion || target.title;
         const dailyMainline = target.dailyMainline || target.summary;
         el.innerHTML = `
-          <section class="card">
+          <section class="card detail-hero">
             <div class="meta">
               <span>${target.date}</span><span>·</span><span>${target.company}</span><span>·</span><span>风险温度：${riskTemp}</span><span>·</span><span>更新时间：${updatedAt}</span>
             </div>
             <h1>${dailyConclusion}</h1>
-            <p>${dailyMainline}</p>
+            <p class="hero-mainline">${dailyMainline}</p>
             <div class="filter-row">
-              <button class="chip" onclick='copyText(${JSON.stringify('${dailyConclusion}')})'>复制主结论</button>
-              <button class="chip" onclick='copyText(${JSON.stringify('${(target.actions||[]).join("；")}')})'>复制行动建议</button>
+              <button class="chip" onclick='copyText(${JSON.stringify(dailyConclusion)})'>复制主结论</button>
+              <button class="chip" onclick='copyText(${JSON.stringify((target.actions||[]).join("；"))})'>复制行动建议</button>
             </div>
           </section>
 
-          <section class="card">
+          <section class="card detail-section">
             <h2 class="section-title">重点摘要（含溯源）</h2>
             <ol class="headline-list">
               ${headlines.map((h, idx) => renderHeadline(h, idx)).join('')}
             </ol>
           </section>
 
-          <section class="card">
+          <section class="card detail-section">
             <h2 class="section-title">行动建议</h2>
             <ul class="actions">
               ${(target.actions || []).map((a) => `<li>${a}</li>`).join('')}
