@@ -52,25 +52,15 @@
         const whyNow = safe.whyNow || '';
         return `
           <li class="headline">
-            <div class="headline-no">0${idx + 1}</div>
-            <section class="headline-block">
-              <p class="block-label">标题</p>
-              <h3 class="block-title">${headlineTitle}</h3>
-              <p class="block-text"><strong>信号等级：</strong>${signal}</p>
-              ${whyNow ? `<p class="block-text"><strong>为什么今天重要：</strong>${whyNow}</p>` : ''}
-            </section>
-            <section class="headline-block">
-              <p class="block-label">摘要</p>
-              <p class="block-text">${headlineSummary}</p>
-            </section>
-            <section class="headline-block">
-              <p class="block-label">解读</p>
-              <p class="block-text kv-strong">${safe.insight || '待补充'}</p>
-            </section>
-            <section class="headline-block">
-              <p class="block-label">机会点</p>
-              <p class="block-text opp">${safe.opportunity || '待补充'}</p>
-            </section>
+            <div class="headline-top">
+              <span class="headline-index">${idx + 1}</span>
+              <span class="headline-signal">信号 ${signal}</span>
+            </div>
+            <h3 class="block-title">${headlineTitle}</h3>
+            ${whyNow ? `<p class="why-now"><strong>为什么今天重要：</strong>${whyNow}</p>` : ''}
+            <p class="block-text"><strong>摘要：</strong>${headlineSummary}</p>
+            <p class="block-text"><strong>解读：</strong>${safe.insight || '待补充'}</p>
+            <p class="block-text"><strong>机会点：</strong>${safe.opportunity || '待补充'}</p>
             ${sourceHtml}
           </li>
         `;
