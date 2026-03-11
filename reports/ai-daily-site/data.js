@@ -1,5 +1,146 @@
 window.AI_DAILY_DATA = [
   {
+    "id": "2026-03-11-openai-microsoft-google-anthropic-nvidia",
+    "date": "2026-03-11",
+    "title": "AI 行业晨报：企业 AI 从入口竞争转向“安全执行 + 规模交付”",
+    "company": "OpenAI / Microsoft / Google / Anthropic / NVIDIA",
+    "priority": "P0",
+    "tags": [
+      "企业AI",
+      "Agent执行闭环",
+      "安全与基础设施"
+    ],
+    "summary": "过去 24-72 小时的可验证公开信号表明，头部厂商的竞争重心继续从“模型更强”转向“谁能在企业环境里更安全、更规模化地完成任务并交付结果”。",
+    "dailyConclusion": "本周最值得下注的不是新模型噱头，而是“可管控的 Agent 执行 + 安全评测 + 基础设施承载”三件套。",
+    "dailyMainline": "OpenAI 把安全评测和企业能力前置，Microsoft 把 Copilot 推向 agents 协同工作，Google 强化 Workspace 原生创作入口，Anthropic 扩大全球交付能力，NVIDIA 用基础设施与 ROI 数据继续固化底座。",
+    "whyNow": "这些信号都在最近 24-72 小时内出现或被放大，直接影响本周企业 AI 产品路线、采购话术与交付优先级，属于需要当天转化为动作的窗口。",
+    "signalLevel": "S",
+    "riskTemperature": "中",
+    "lastUpdatedAt": "2026-03-11 09:00 Asia/Shanghai",
+    "headlines": [
+      {
+        "title": "OpenAI 收购 Promptfoo，把 AI 安全评测前置到企业交付链路",
+        "summary": "OpenAI 3 月 9 日宣布将收购 AI 安全平台 Promptfoo，强调帮助企业在开发阶段识别并修复 AI 系统漏洞。",
+        "insight": "企业级 AI 的竞争标准正在从“模型能力”升级为“上线前是否可测、可控、可审计”。",
+        "opportunity": "把红队评测、提示注入防护和上线前验收流程做成企业版默认能力，而不是后补模块。",
+        "sources": [
+          "https://openai.com/index/openai-to-acquire-promptfoo/",
+          "https://openai.com/index/ai-progress-and-recommendations/"
+        ],
+        "sourceMeta": [
+          {
+            "url": "https://openai.com/index/openai-to-acquire-promptfoo/",
+            "type": "official"
+          },
+          {
+            "url": "https://openai.com/index/ai-progress-and-recommendations/",
+            "type": "official"
+          }
+        ],
+        "lastVerifiedAt": "2026-03-11 09:00 Asia/Shanghai",
+        "whyNow": "这意味着企业采购对“安全评测内建化”的要求会更快前置，本周就应调整方案话术。",
+        "signalLevel": "S"
+      },
+      {
+        "title": "Microsoft 发布 Copilot Wave 3，推进 Copilot 与 agents 协同工作",
+        "summary": "Microsoft 365 Blog 3 月 9 日发布“Powering Frontier Transformation with Copilot and agents”，并介绍 Copilot Cowork、multi-model intelligence 等企业级能力。",
+        "insight": "办公入口的竞争已经从“有没有 Copilot”转成“能否组织多个 agent 真正把活干完”。",
+        "opportunity": "优先做“邮件-文档-任务-审批”跨系统执行闭环，直接对标企业对 agent 协同的预期。",
+        "sources": [
+          "https://www.microsoft.com/en-us/microsoft-365/blog/2026/03/09/powering-frontier-transformation-with-copilot-and-agents/",
+          "https://www.microsoft.com/en-us/microsoft-365/blog/2026/03/09/copilot-cowork-a-new-way-of-getting-work-done/"
+        ],
+        "sourceMeta": [
+          {
+            "url": "https://www.microsoft.com/en-us/microsoft-365/blog/2026/03/09/powering-frontier-transformation-with-copilot-and-agents/",
+            "type": "official"
+          },
+          {
+            "url": "https://www.microsoft.com/en-us/microsoft-365/blog/2026/03/09/copilot-cowork-a-new-way-of-getting-work-done/",
+            "type": "official"
+          }
+        ],
+        "lastVerifiedAt": "2026-03-11 09:00 Asia/Shanghai",
+        "whyNow": "Wave 3 会直接抬高企业客户对协同 agent 能力的预期，独立产品必须给出可交付差异。",
+        "signalLevel": "S"
+      },
+      {
+        "title": "Google 今日更新 Gemini for Workspace，重做 Docs/Sheets/Slides/Drive 内容创作链路",
+        "summary": "Google Workspace Blog 3 月 11 日发布新文，宣布用 Gemini 重塑 Docs、Sheets、Slides、Drive 的内容创作体验。",
+        "insight": "AI 正在进一步嵌入高频办公创作主流程，独立工具更难仅靠单点功能获得使用时长。",
+        "opportunity": "围绕“内容生成→协作修改→资产沉淀→任务回写”设计模板化工作流，抢占二次执行层。",
+        "sources": [
+          "https://workspace.google.com/blog/product-announcements/reimagining-content-creation",
+          "https://workspace.google.com/blog/product-announcements/gemini-for-google-workspace"
+        ],
+        "sourceMeta": [
+          {
+            "url": "https://workspace.google.com/blog/product-announcements/reimagining-content-creation",
+            "type": "official"
+          },
+          {
+            "url": "https://workspace.google.com/blog/product-announcements/gemini-for-google-workspace",
+            "type": "official"
+          }
+        ],
+        "lastVerifiedAt": "2026-03-11 09:00 Asia/Shanghai",
+        "whyNow": "这是当天的新入口信号，直接关系到内容办公场景里 AI 入口进一步固化。",
+        "signalLevel": "S"
+      },
+      {
+        "title": "Anthropic 扩展印度运营，继续为 2026 年全球企业交付做组织铺路",
+        "summary": "Anthropic 宣布扩展全球运营至印度，并计划在 2026 年初于 Bengaluru 设立办公室，作为其亚太第二办公室。",
+        "insight": "头部模型厂商开始把竞争从模型层延伸到全球交付、客户成功和本地化组织能力。",
+        "opportunity": "面向企业客户时，可把“本地化交付与支持能力”明确写进方案，而不只讲模型效果。",
+        "sources": [
+          "https://www.anthropic.com/news/expanding-global-operations-to-india",
+          "https://www.anthropic.com/news"
+        ],
+        "sourceMeta": [
+          {
+            "url": "https://www.anthropic.com/news/expanding-global-operations-to-india",
+            "type": "official"
+          },
+          {
+            "url": "https://www.anthropic.com/news",
+            "type": "official"
+          }
+        ],
+        "lastVerifiedAt": "2026-03-11 09:00 Asia/Shanghai",
+        "whyNow": "企业客户会越来越关注供应商是否具备区域交付与服务承载能力，这已影响选型。",
+        "signalLevel": "A"
+      },
+      {
+        "title": "NVIDIA 用最新 State of AI 报告与外部资本动作，继续强化“基础设施先行”叙事",
+        "summary": "NVIDIA 3 月 10 日发布 2026 State of AI 报告，强调 AI 正在驱动收入、降本和提效；同期 Reuters 报道 Thinking Machines 获得资本与 NVIDIA 芯片供应协议。",
+        "insight": "2026 年应用层增长仍强依赖底层算力供给和 ROI 证明，基础设施与资本配置继续主导节奏。",
+        "opportunity": "产品侧应尽快建立任务分级路由、成本看板和算力预算阈值，把 ROI 讲清楚。",
+        "sources": [
+          "https://blogs.nvidia.com/blog/state-of-ai-report-2026/",
+          "https://www.reuters.com/business/ai-startup-thinking-machines-clinches-capital-major-chip-supply-deal-nvidia-2026-03-10/"
+        ],
+        "sourceMeta": [
+          {
+            "url": "https://blogs.nvidia.com/blog/state-of-ai-report-2026/",
+            "type": "official"
+          },
+          {
+            "url": "https://www.reuters.com/business/ai-startup-thinking-machines-clinches-capital-major-chip-supply-deal-nvidia-2026-03-10/",
+            "type": "media"
+          }
+        ],
+        "lastVerifiedAt": "2026-03-11 09:00 Asia/Shanghai",
+        "whyNow": "GTC 前夕和最新融资/供给信号一起出现，提醒本周讨论产品路线时不能忽视基础设施承载。",
+        "signalLevel": "A"
+      }
+    ],
+    "actions": [
+      "今天内补一版“Agent 执行链路安全验收清单”，把提示注入、权限越界、输出回写错误纳入上线前检查。",
+      "把当前产品方案从“会回答”改写为“可执行、可审计、可回滚”，尤其补齐日志和人工接管设计。",
+      "建立 S/A/B 任务分级的模型与算力路由看板，开始同时跟踪完成率、时延和单任务成本。"
+    ]
+  },
+  {
     "id": "2026-03-10-openai-microsoft-google-anthropic-nvidia",
     "date": "2026-03-10",
     "title": "AI 行业晨报：企业入口竞逐升级，执行闭环成为本周主战场",
