@@ -1,5 +1,126 @@
 window.AI_DAILY_DATA = [
   {
+    "id": "2026-03-13-openai-microsoft-google-anthropic-nvidia",
+    "date": "2026-03-13",
+    "title": "AI 行业晨报：竞争从模型能力转向‘基础设施承载 + 工作入口执行 + 政策合规’联动",
+    "company": "OpenAI / Microsoft / Google / Anthropic / NVIDIA",
+    "priority": "P0",
+    "tags": [
+      "企业AI",
+      "基础设施",
+      "政策与执行"
+    ],
+    "summary": "过去 24-72 小时的公开可验证信号显示，头部厂商正在同时加码三条主线：更重的算力与基础设施承载、更深的工作流入口执行，以及更明确的政策与治理站位。单点模型升级仍重要，但已经不是今天最核心的竞争变量。",
+    "dailyConclusion": "今天最该关注的不是谁再发一个更强模型，而是谁能同时拿下‘基础设施承载、工作入口执行、政策合规’三张牌；这决定 2026 企业 AI 能否从试点走到预算级部署。",
+    "dailyMainline": "OpenAI 用 AMD 基础设施合作继续放大供给与资本承载叙事，Microsoft 继续把 Copilot 从助手推向 agents 协同执行，Google 把 Gemini 更深嵌入内容创作主流程，Anthropic 把 AI Action Plan 建议公开化强化政策影响力，NVIDIA 借 GTC 2026 把行业注意力重新拉回平台与生态。",
+    "whyNow": "这些信号都集中在最近 1-4 天内，且直接影响本周企业客户的选型话术、产品路线和组织优先级判断，属于当天就应转成动作的窗口。",
+    "signalLevel": "S",
+    "riskTemperature": "中",
+    "lastUpdatedAt": "2026-03-13 09:00 Asia/Shanghai",
+    "headlines": [
+      {
+        "title": "OpenAI 与 AMD 达成多年 GPU 基础设施合作，继续放大供给承载叙事",
+        "summary": "Brave 检索到 OpenAI 官方 3 月新闻《AMD and OpenAI announce strategic partnership to deploy 6 gigawatts of AMD GPUs》，核心信息为双方将分阶段部署大规模 AMD Instinct GPU 基础设施，首批容量从 2026 年开始落地。",
+        "insight": "OpenAI 正把竞争从模型能力进一步推向‘谁拥有长期算力供给与交付承载力’，基础设施确定性本身正在成为产品竞争力。",
+        "opportunity": "面向企业客户时，要把‘任务分级路由、容量预算、成本边界和 SLA’做成方案前台，而不是只讲模型效果。",
+        "sources": [
+          "https://openai.com/index/openai-amd-strategic-partnership/"
+        ],
+        "sourceMeta": [
+          {
+            "url": "https://openai.com/index/openai-amd-strategic-partnership/",
+            "type": "official-search-verified"
+          }
+        ],
+        "lastVerifiedAt": "2026-03-13 09:00 Asia/Shanghai",
+        "whyNow": "基础设施合作一旦被公开，企业侧对供应稳定性、成本曲线和可扩展性的预期会立刻上升。",
+        "signalLevel": "S"
+      },
+      {
+        "title": "Microsoft 持续推进 Copilot 与 agents 协同工作，抬高企业执行预期",
+        "summary": "Microsoft 365 Blog 3 月 9 日发布《Powering Frontier Transformation with Copilot and agents》与《Copilot Cowork: A new way of getting work done》，强调下一波 Copilot 不再只是单轮问答，而是更核心的 agentic capabilities 与多步骤工作执行。",
+        "insight": "办公入口竞争已经进入‘谁能在真实上下文里把复杂工作持续做完’阶段，企业会更快从问答体验转向执行结果评估。",
+        "opportunity": "优先补齐邮件、文档、任务、审批之间的跨系统回写闭环，用真实执行链路对标 Copilot 预期。",
+        "sources": [
+          "https://www.microsoft.com/en-us/microsoft-365/blog/2026/03/09/powering-frontier-transformation-with-copilot-and-agents/",
+          "https://www.microsoft.com/en-us/microsoft-365/blog/2026/03/09/copilot-cowork-a-new-way-of-getting-work-done/"
+        ],
+        "sourceMeta": [
+          {
+            "url": "https://www.microsoft.com/en-us/microsoft-365/blog/2026/03/09/powering-frontier-transformation-with-copilot-and-agents/",
+            "type": "official-search-verified"
+          },
+          {
+            "url": "https://www.microsoft.com/en-us/microsoft-365/blog/2026/03/09/copilot-cowork-a-new-way-of-getting-work-done/",
+            "type": "official-search-verified"
+          }
+        ],
+        "lastVerifiedAt": "2026-03-13 09:00 Asia/Shanghai",
+        "whyNow": "Wave 3 的公开表述会直接抬高本周企业客户对 agent 深度执行与可控性的要求。",
+        "signalLevel": "S"
+      },
+      {
+        "title": "Google 重做 Workspace 内容创作链路，Gemini 更深嵌入主工作流",
+        "summary": "Google Workspace Blog 3 月 10 日发布《Gemini update reimagines content creation for business users》，明确提出把 Gemini 在 Docs、Sheets、Slides、Drive 中升级为贯穿创作过程的协作伙伴，而不只是生成按钮。",
+        "insight": "原生办公入口正在继续吞掉高频生成与整理场景，独立工具越来越难靠单点生成能力保住时长。",
+        "opportunity": "产品设计要前移到生成后的协作修改、审批、资产沉淀与任务回写层，争夺二次执行价值。",
+        "sources": [
+          "https://workspace.google.com/blog/product-announcements/reimagining-content-creation"
+        ],
+        "sourceMeta": [
+          {
+            "url": "https://workspace.google.com/blog/product-announcements/reimagining-content-creation",
+            "type": "official"
+          }
+        ],
+        "lastVerifiedAt": "2026-03-13 09:00 Asia/Shanghai",
+        "whyNow": "这类原生入口升级会迅速改变企业对内容 AI 的默认认知和采购比较基准。",
+        "signalLevel": "S"
+      },
+      {
+        "title": "Anthropic 公布对美国 AI Action Plan 的建议，继续抢占政策与治理话语权",
+        "summary": "Anthropic 官方新闻页显示其发布《Anthropic’s Recommendations to OSTP for the U.S. AI Action Plan》，把公司对国家 AI 路线、风险治理与产业竞争的主张直接推向政策讨论前台。",
+        "insight": "头部厂商的竞争已不只在产品层，也在争夺谁来定义治理框架、政策节奏和合规边界。",
+        "opportunity": "面向企业与政府场景时，应更早补齐权限边界、人工接管、审计日志和风险沟通材料。",
+        "sources": [
+          "https://www.anthropic.com/news/anthropic-s-recommendations-ostp-u-s-ai-action-plan"
+        ],
+        "sourceMeta": [
+          {
+            "url": "https://www.anthropic.com/news/anthropic-s-recommendations-ostp-u-s-ai-action-plan",
+            "type": "official"
+          }
+        ],
+        "lastVerifiedAt": "2026-03-13 09:00 Asia/Shanghai",
+        "whyNow": "政策建议公开化会加速企业客户把治理与合规要求前置到选型和落地方案中。",
+        "signalLevel": "A"
+      },
+      {
+        "title": "NVIDIA 开启 GTC 2026 实时更新，把行业注意力重新拉回平台与生态节点",
+        "summary": "NVIDIA Blog 今日更新《NVIDIA GTC 2026: Live Updates on What’s Next in AI》，明确 3 月 16 日 Jensen Huang 主题演讲与整周滚动发布安排，继续强化 GTC 作为全年 AI 平台风向标的地位。",
+        "insight": "每逢 GTC，应用层路线判断都会再次受到底层算力、平台工具链和生态合作方向牵引。",
+        "opportunity": "本周应提前梳理产品的模型/算力路由、成本阈值与平台依赖，准备根据 GTC 新信号快速调整。",
+        "sources": [
+          "https://blogs.nvidia.com/blog/gtc-2026-news/"
+        ],
+        "sourceMeta": [
+          {
+            "url": "https://blogs.nvidia.com/blog/gtc-2026-news/",
+            "type": "official"
+          }
+        ],
+        "lastVerifiedAt": "2026-03-13 09:00 Asia/Shanghai",
+        "whyNow": "GTC 前夕是重估平台依赖、供给节奏和生态机会的最佳观察窗口。",
+        "signalLevel": "A"
+      }
+    ],
+    "actions": [
+      "今天内把产品方案从‘能回答’改成‘能在工作流里执行并回写结果’，优先补齐审批、回写和人工接管节点。",
+      "建立一版任务分级的模型/算力路由与成本看板，把容量、时延、单任务成本和 SLA 放到同一张图里。",
+      "补一版企业治理材料：权限边界、审计日志、风险告知、回滚机制和上线前安全验收清单。"
+    ]
+  },
+  {
     "id": "2026-03-12-openai-microsoft-google-anthropic-nvidia",
     "date": "2026-03-12",
     "title": "AI 行业晨报：竞争主线从模型秀肌肉转向‘资本+入口+治理’三线并进",
