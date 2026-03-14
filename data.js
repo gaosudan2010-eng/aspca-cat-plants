@@ -1,5 +1,141 @@
 window.AI_DAILY_DATA = [
   {
+    "id": "2026-03-14-openai-microsoft-google-anthropic-nvidia",
+    "date": "2026-03-14",
+    "title": "AI 行业晨报：竞争进入“供给锁定 + 工作入口执行 + 政策边界博弈”并行阶段",
+    "company": "OpenAI / Microsoft / Google / Anthropic / NVIDIA",
+    "priority": "P0",
+    "tags": [
+      "企业AI",
+      "平台竞争",
+      "政策与基础设施"
+    ],
+    "summary": "过去 24-96 小时的公开可验证信号显示，头部 AI 厂商的竞争已不再是单点模型升级，而是同时争夺三层控制权：算力与资本供给的长期锁定、办公入口中的 agent 执行主导权，以及政策/国防等高敏感场景的边界定义权。",
+    "dailyConclusion": "今天最重要的判断是：2026 年 AI 胜负手正在从“谁模型更强”转向“谁能锁住供给、占住工作入口、并在高风险场景里拿到制度性许可”。",
+    "dailyMainline": "OpenAI 延续科研与基础设施承载叙事，Microsoft 把 Copilot 明确推向 agents 协同执行，Google 将 Gemini 更深嵌入内容生产主流程，Anthropic 因 Pentagon 使用边界冲突把政策博弈推到台前，NVIDIA 则借 GTC 2026 最新更新继续强化平台与生态牵引。",
+    "whyNow": "这些信号都集中在最近 1 周内，且 NVIDIA 今日更新与 Anthropic 政策冲突让“平台承载力 + 执行闭环 + 合规边界”三条主线在今天同时变成必须落动作的窗口。",
+    "signalLevel": "S",
+    "riskTemperature": "高",
+    "lastUpdatedAt": "2026-03-14 09:00 Asia/Shanghai",
+    "headlines": [
+      {
+        "title": "OpenAI 持续把 AI 价值锚定到科研与长期承载力，而非单次模型秀肌肉",
+        "summary": "OpenAI 近期公开美国能源部合作与资金更新，核心叙事不是单一产品发布，而是把 AI 放进国家级科研、长期资本与高价值计算基础设施的框架中。",
+        "insight": "OpenAI 在强化“长期供给能力本身就是产品能力”的市场认知，未来企业采购会更关注可持续承载、交付确定性与高价值场景适配。",
+        "opportunity": "对企业方案来说，要把容量规划、SLA、任务分级路由和成本边界前置成销售与交付话术，而不是只展示模型 demo。",
+        "sources": [
+          "https://openai.com/index/us-department-of-energy-collaboration/",
+          "https://openai.com/index/march-funding-updates/"
+        ],
+        "sourceMeta": [
+          {
+            "url": "https://openai.com/index/us-department-of-energy-collaboration/",
+            "type": "official"
+          },
+          {
+            "url": "https://openai.com/index/march-funding-updates/",
+            "type": "official"
+          }
+        ],
+        "lastVerifiedAt": "2026-03-14 09:00 Asia/Shanghai",
+        "whyNow": "当平台叙事转向“长期承载”时，本周所有企业 AI 产品都要重新解释自己的供给确定性。",
+        "signalLevel": "A"
+      },
+      {
+        "title": "Microsoft 把 Copilot 从助手明确推向 agents 协同执行，抬高企业工作入口预期",
+        "summary": "Microsoft 365 Blog 3 月 9 日连续发布 Copilot and agents 与 Copilot Cowork，强调这不是单独模式，而是下一波 Copilot 的核心工作方式，并将在 3 月下旬进一步扩展。",
+        "insight": "办公入口竞争已从“接入 AI”升级为“谁能在真实上下文里持续把复杂工作做完并协同多个 agent”。",
+        "opportunity": "优先建设邮件、文档、知识库、任务、审批之间的跨系统回写闭环，用可执行结果对齐企业客户对 agent 的新预期。",
+        "sources": [
+          "https://www.microsoft.com/en-us/microsoft-365/blog/2026/03/09/powering-frontier-transformation-with-copilot-and-agents/",
+          "https://www.microsoft.com/en-us/microsoft-365/blog/2026/03/09/copilot-cowork-a-new-way-of-getting-work-done/"
+        ],
+        "sourceMeta": [
+          {
+            "url": "https://www.microsoft.com/en-us/microsoft-365/blog/2026/03/09/powering-frontier-transformation-with-copilot-and-agents/",
+            "type": "official-search-verified"
+          },
+          {
+            "url": "https://www.microsoft.com/en-us/microsoft-365/blog/2026/03/09/copilot-cowork-a-new-way-of-getting-work-done/",
+            "type": "official-search-verified"
+          }
+        ],
+        "lastVerifiedAt": "2026-03-14 09:00 Asia/Shanghai",
+        "whyNow": "3 月下旬更广泛开放在即，本周就是企业级 agent 方案跟进升级的窗口。",
+        "signalLevel": "S"
+      },
+      {
+        "title": "Google 把 Gemini 深嵌 Docs/Sheets/Slides/Drive，继续吞掉高频内容创作入口",
+        "summary": "Google Workspace Blog 3 月 10 日提出 reimagining content creation，明确把 Gemini 从生成按钮升级为贯穿创作过程的协作伙伴。",
+        "insight": "内容办公类 AI 的竞争重心已从生成质量转向“生成后协作、沉淀、审批和任务回写”能否留在原生入口内。",
+        "opportunity": "产品设计应前移到生成后的二次执行层，比如审阅、资产复用、流程触发与结果沉淀，避免被原生入口挤压。",
+        "sources": [
+          "https://workspace.google.com/blog/product-announcements/reimagining-content-creation"
+        ],
+        "sourceMeta": [
+          {
+            "url": "https://workspace.google.com/blog/product-announcements/reimagining-content-creation",
+            "type": "official-search-verified"
+          }
+        ],
+        "lastVerifiedAt": "2026-03-14 09:00 Asia/Shanghai",
+        "whyNow": "当原生办公入口升级为“全过程协作伙伴”后，独立工具必须立刻证明自身在执行层的不可替代性。",
+        "signalLevel": "S"
+      },
+      {
+        "title": "Anthropic 与 Pentagon 的使用边界冲突升级，政策与国防准入成为高敏场景关键变量",
+        "summary": "Reuters 3 月 7 日与 3 月 9 日连续报道，美国正在起草更严格的 AI 使用规则，Anthropic 也因使用限制与 Pentagon 冲突升级到诉讼层面。",
+        "insight": "高敏感行业的竞争已不只是模型能力，而是谁能接受“任何 lawful use”之类更强制度要求，并处理安全、伦理与商业边界冲突。",
+        "opportunity": "面向政府、金融、制造等高合规行业时，要更早把权限边界、人工接管、拒答策略和合同责任划分做成标准包。",
+        "sources": [
+          "https://www.reuters.com/business/media-telecom/us-draws-up-strict-new-ai-guidelines-amid-anthropic-clash-ft-reports-2026-03-07/",
+          "https://www.reuters.com/world/anthropic-sues-block-pentagon-blacklisting-over-ai-use-restrictions-2026-03-09/"
+        ],
+        "sourceMeta": [
+          {
+            "url": "https://www.reuters.com/business/media-telecom/us-draws-up-strict-new-ai-guidelines-amid-anthropic-clash-ft-reports-2026-03-07/",
+            "type": "media"
+          },
+          {
+            "url": "https://www.reuters.com/world/anthropic-sues-block-pentagon-blacklisting-over-ai-use-restrictions-2026-03-09/",
+            "type": "media"
+          }
+        ],
+        "lastVerifiedAt": "2026-03-14 09:00 Asia/Shanghai",
+        "whyNow": "这说明政策与合同边界会直接影响头部模型在高价值场景的准入资格，今天就该补治理与权限方案。",
+        "signalLevel": "S"
+      },
+      {
+        "title": "NVIDIA 今日更新 GTC 2026 实时动态，平台牵引效应继续放大",
+        "summary": "NVIDIA Blog 今日更新 GTC 2026 live updates，并延续与 Thinking Machines Lab 的长期合作与供给扩张叙事，把行业注意力继续拉回到底层平台、生态合作与算力部署节奏。",
+        "insight": "每到 GTC 节点，应用层路线都会再次被基础设施供给、工具链能力与生态结盟节奏重写。",
+        "opportunity": "本周应提前梳理产品的模型/算力路由、成本阈值、平台依赖和备选方案，准备根据 GTC 新信号快速调整路线。",
+        "sources": [
+          "https://blogs.nvidia.com/blog/gtc-2026-news/",
+          "https://www.reuters.com/business/ai-startup-thinking-machines-clinches-capital-major-chip-supply-deal-nvidia-2026-03-10/"
+        ],
+        "sourceMeta": [
+          {
+            "url": "https://blogs.nvidia.com/blog/gtc-2026-news/",
+            "type": "official-search-verified"
+          },
+          {
+            "url": "https://www.reuters.com/business/ai-startup-thinking-machines-clinches-capital-major-chip-supply-deal-nvidia-2026-03-10/",
+            "type": "media"
+          }
+        ],
+        "lastVerifiedAt": "2026-03-14 09:00 Asia/Shanghai",
+        "whyNow": "NVIDIA 今日更新让 GTC 再次成为未来几天 AI 路线判断的最大外部变量。",
+        "signalLevel": "S"
+      }
+    ],
+    "actions": [
+      "今天内把对外方案从“模型能力展示”改写成“供给确定性 + 工作流执行 + 合规边界”三段式表达。",
+      "优先补齐邮件/文档/任务/审批之间的回写闭环，并为高风险任务加入人工接管与审计日志。",
+      "在 GTC 主题演讲前完成一版模型与算力路由看板，明确主用平台、备选平台与成本阈值。"
+    ]
+  },
+  {
     "id": "2026-03-13-openai-microsoft-google-anthropic-nvidia",
     "date": "2026-03-13",
     "title": "AI 行业晨报：竞争从模型能力转向‘基础设施承载 + 工作入口执行 + 政策合规’联动",
@@ -402,4 +538,4 @@ window.AI_DAILY_DATA = [
       "建立 S/A/B 任务分级的模型与算力路由看板，开始同时跟踪完成率、时延和单任务成本。"
     ]
   }
-];
+]
