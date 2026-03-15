@@ -1,5 +1,151 @@
 window.AI_DAILY_DATA = [
   {
+    "id": "2026-03-15-openai-microsoft-google-anthropic-nvidia",
+    "date": "2026-03-15",
+    "title": "AI 行业晨报：竞争正式进入“资本供给封顶前夜 + agent 工作入口落地 + 政策阵营重排”阶段",
+    "company": "OpenAI / Microsoft / Google / Anthropic / NVIDIA",
+    "priority": "P0",
+    "tags": [
+      "企业AI",
+      "agent入口",
+      "资本与政策"
+    ],
+    "summary": "过去一周可验证的公开信号正在收敛成同一个判断：头部 AI 厂商的竞争重心，已经从单点模型迭代转向三件事同步推进——更重的资本与算力绑定、真实办公入口中的 agent 执行落地，以及政府/国防场景中的政策与供应链阵营重排。",
+    "dailyConclusion": "今天最重要的结论是：2026 年 AI 竞争已进入“谁能先锁住供给、占住工作入口、并在高敏场景完成阵营站位”的决胜阶段，单纯比模型参数已经不够。",
+    "dailyMainline": "OpenAI 用融资与科研合作继续扩大长期承载叙事，Microsoft 把 Copilot 明确推向 agent 协同执行，Google 把 Gemini 深嵌原生内容创作流程，Anthropic 因 Pentagon 冲突与政策建议同时站到制度博弈中心，NVIDIA 则在 GTC 前夜继续定义平台风向。",
+    "whyNow": "这些信号都集中在最近 4-10 天内，且会直接影响本周企业客户对“选谁做底座、谁能进工作流、谁适合高合规场景”的判断，今天就该转成产品与销售动作。",
+    "signalLevel": "S",
+    "riskTemperature": "高",
+    "lastUpdatedAt": "2026-03-15 09:00 Asia/Shanghai",
+    "headlines": [
+      {
+        "title": "OpenAI 把融资与科研合作绑定成“长期承载能力”叙事",
+        "summary": "OpenAI 官方近期同时公开 400 亿美元新融资与美国能源部合作，公开口径都指向同一件事：把 frontier 模型能力、科研场景和长期算力投入打包成更强的平台承载叙事。",
+        "insight": "OpenAI 不再只卖“更强模型”，而是在强化“能长期供给、能服务国家级科研场景”的市场心智，企业采购会更看重容量与确定性。",
+        "opportunity": "对外方案应把 SLA、容量规划、任务分级路由和高价值场景交付能力前置，而不是只展示模型效果。",
+        "sources": [
+          "https://openai.com/index/march-funding-updates/",
+          "https://openai.com/index/us-department-of-energy-collaboration/"
+        ],
+        "sourceMeta": [
+          {
+            "url": "https://openai.com/index/march-funding-updates/",
+            "type": "official-search-verified"
+          },
+          {
+            "url": "https://openai.com/index/us-department-of-energy-collaboration/",
+            "type": "official-search-verified"
+          }
+        ],
+        "lastVerifiedAt": "2026-03-15 09:00 Asia/Shanghai",
+        "whyNow": "当 OpenAI 公开把资金、算力与科研承载绑定后，本周所有企业 AI 方案都要补“供给确定性”这一层。",
+        "signalLevel": "S"
+      },
+      {
+        "title": "Microsoft 把 Copilot 从助手升级为 agents 协同工作入口",
+        "summary": "Microsoft 365 Blog 3 月 9 日连续发布《Powering Frontier Transformation with Copilot and agents》与《Copilot Cowork》，明确 Wave 3 正从 assistive AI 转向 embedded agentic capabilities，且 Cowork 将在 3 月下旬更广泛开放。",
+        "insight": "办公入口竞争已经从“谁能回答问题”升级成“谁能在真实上下文里持续调用多个 agent 把复杂工作做完”。",
+        "opportunity": "优先补齐邮件、文档、知识库、审批、任务系统之间的回写闭环，用“完成结果”而不是“回答质量”打销售样板。",
+        "sources": [
+          "https://www.microsoft.com/en-us/microsoft-365/blog/2026/03/09/powering-frontier-transformation-with-copilot-and-agents/",
+          "https://www.microsoft.com/en-us/microsoft-365/blog/2026/03/09/copilot-cowork-a-new-way-of-getting-work-done/",
+          "https://www.reuters.com/business/microsoft-taps-anthropic-copilot-cowork-push-ai-agents-2026-03-09/"
+        ],
+        "sourceMeta": [
+          {
+            "url": "https://www.microsoft.com/en-us/microsoft-365/blog/2026/03/09/powering-frontier-transformation-with-copilot-and-agents/",
+            "type": "official-search-verified"
+          },
+          {
+            "url": "https://www.microsoft.com/en-us/microsoft-365/blog/2026/03/09/copilot-cowork-a-new-way-of-getting-work-done/",
+            "type": "official-search-verified"
+          },
+          {
+            "url": "https://www.reuters.com/business/microsoft-taps-anthropic-copilot-cowork-push-ai-agents-2026-03-09/",
+            "type": "media-search-verified"
+          }
+        ],
+        "lastVerifiedAt": "2026-03-15 09:00 Asia/Shanghai",
+        "whyNow": "3 月下旬更广泛开放在即，今天就是把产品叙事从“AI 助手”切换到“可协同执行的工作入口”的窗口。",
+        "signalLevel": "S"
+      },
+      {
+        "title": "Google 把 Gemini 深嵌内容创作主流程，继续吞掉原生入口",
+        "summary": "Google Workspace Blog 3 月 10 日提出“reimagining content creation”，把 Gemini 在 Docs、Sheets、Slides、Drive 中定位成贯穿创作全过程的协作伙伴，而非单一生成按钮。",
+        "insight": "内容 AI 的竞争焦点正在从生成质量转向“生成后协作、审批、资产沉淀和任务回写”是否还能留在原生入口。",
+        "opportunity": "独立产品要把价值前移到二次执行层，例如审阅、流程触发、资产复用和组织级沉淀，避免被原生办公入口吃掉时长。",
+        "sources": [
+          "https://workspace.google.com/blog/product-announcements/reimagining-content-creation"
+        ],
+        "sourceMeta": [
+          {
+            "url": "https://workspace.google.com/blog/product-announcements/reimagining-content-creation",
+            "type": "official-search-verified"
+          }
+        ],
+        "lastVerifiedAt": "2026-03-15 09:00 Asia/Shanghai",
+        "whyNow": "Google 已把 Gemini 明确推到内容生产主流程里，今天不重做“生成后执行层”价值，后面会更被动。",
+        "signalLevel": "A"
+      },
+      {
+        "title": "Anthropic 被推到政策与国防供应链博弈中心，高敏场景准入成关键变量",
+        "summary": "Anthropic 一边公开向美国 OSTP 提交 AI Action Plan 建议，一边因 Pentagon “supply-chain risk” 争议持续升级；Reuters 还显示 Microsoft 与 OpenAI/Google 员工以 amicus brief 方式介入，说明这已不只是单家公司纠纷。",
+        "insight": "高敏行业的竞争不再只看模型能力，而是看谁能在政府、国防与监管体系中获得制度性准入，并处理“能力、边界、责任”三者冲突。",
+        "opportunity": "面向政府、金融、制造等高合规场景时，应尽快标准化权限边界、人工接管、审计日志和合同责任划分。",
+        "sources": [
+          "https://www.anthropic.com/news/anthropic-s-recommendations-ostp-u-s-ai-action-plan",
+          "https://www.reuters.com/legal/litigation/microsoft-files-amicus-brief-support-anthropics-lawsuit-with-us-dod-2026-03-10/",
+          "https://www.reuters.com/technology/anthropic-courted-pentagon-heres-why-it-walked-away-2026-03-04/"
+        ],
+        "sourceMeta": [
+          {
+            "url": "https://www.anthropic.com/news/anthropic-s-recommendations-ostp-u-s-ai-action-plan",
+            "type": "official-search-verified"
+          },
+          {
+            "url": "https://www.reuters.com/legal/litigation/microsoft-files-amicus-brief-support-anthropics-lawsuit-with-us-dod-2026-03-10/",
+            "type": "media-search-verified"
+          },
+          {
+            "url": "https://www.reuters.com/technology/anthropic-courted-pentagon-heres-why-it-walked-away-2026-03-04/",
+            "type": "media-search-verified"
+          }
+        ],
+        "lastVerifiedAt": "2026-03-15 09:00 Asia/Shanghai",
+        "whyNow": "这说明高价值行业的供应链与合规站位正在快速重排，今天就要补齐治理与准入材料。",
+        "signalLevel": "S"
+      },
+      {
+        "title": "NVIDIA 在 GTC 前夜继续主导平台节奏，应用层路线面临再定价",
+        "summary": "NVIDIA Blog 的 GTC 2026 live updates 已进入滚动更新阶段，Jensen Huang 主题演讲临近；同时 Reuters 3 月 4 日报道称，NVIDIA 对 OpenAI/Anthropic 的最新股权投资可能是 IPO 前最后一轮，角色正从财务投资者转向更底层的基础设施定义者。",
+        "insight": "平台方对资本、芯片、生态和发布节奏的统合能力，正在重新定义应用层公司的成本结构、依赖关系和路线选择。",
+        "opportunity": "本周内应完成模型/算力路由看板，明确主平台、备选平台、成本阈值和平台依赖替代方案。",
+        "sources": [
+          "https://blogs.nvidia.com/blog/gtc-2026-news/",
+          "https://www.reuters.com/business/nvidia-will-not-be-able-invest-100-billion-openai-due-ipo-ceo-jensen-says-2026-03-04/"
+        ],
+        "sourceMeta": [
+          {
+            "url": "https://blogs.nvidia.com/blog/gtc-2026-news/",
+            "type": "official-search-verified"
+          },
+          {
+            "url": "https://www.reuters.com/business/nvidia-will-not-be-able-invest-100-billion-openai-due-ipo-ceo-jensen-says-2026-03-04/",
+            "type": "media-search-verified"
+          }
+        ],
+        "lastVerifiedAt": "2026-03-15 09:00 Asia/Shanghai",
+        "whyNow": "GTC 主题演讲前夜通常就是应用层重新评估平台依赖与供给预期的最后窗口。",
+        "signalLevel": "S"
+      }
+    ],
+    "actions": [
+      "今天内把对外叙事改成“供给确定性 + agent 执行闭环 + 合规/准入能力”三段式，不再只讲模型能力。",
+      "优先补齐邮件、文档、审批、任务系统之间的回写链路，并把可审计的人机接管点做成标准能力。",
+      "在 GTC 主题演讲前完成一版模型/算力路由与平台依赖看板，明确主平台、备选平台、成本阈值和替代策略。"
+    ]
+  },
+  {
     "id": "2026-03-14-openai-microsoft-google-anthropic-nvidia",
     "date": "2026-03-14",
     "title": "AI 行业晨报：竞争进入“供给锁定 + 工作入口执行 + 政策边界博弈”并行阶段",
