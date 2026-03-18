@@ -1,5 +1,132 @@
 window.AI_DAILY_DATA = [
   {
+    "id": "2026-03-18-openai-microsoft-google-anthropic-nvidia",
+    "date": "2026-03-18",
+    "title": "AI 行业晨报：GTC 2026 后续效应显现，VC 泡沫警告与收入军备竞赛同步上演",
+    "company": "OpenAI / Microsoft / Google / Anthropic / NVIDIA / Snowflake",
+    "priority": "P0",
+    "tags": [
+      "企业AI",
+      "资本与泡沫",
+      "GTC后续"
+    ],
+    "summary": "截至今天 9 点，GTC 2026 主题演讲已过去 48 小时，市场正在消化 NVIDIA 推理芯片、Vera Rubin 系统等新信号；同时顶级 VC Bill Gurley 公开警告 AI 基础设施泡沫风险，Anthropic 编码 Agent 年收入预计年底超过 OpenAI。头部厂商竞争正从\"模型秀肌肉\"转向\"资本效率 + 执行闭环 + 政策准入\"三维决战。",
+    "dailyConclusion": "今天最重要的结论是：AI 竞争已进入\"谁能让资本市场相信长期 ROI\"的阶段，单纯的技术领先已不够；GTC 后平台层信号已基本出清，各厂商需在 3-4 周内完成从\"模型叙事\"到\"可落地收入与合规\"的切换。",
+    "dailyMainline": "NVIDIA 在 GTC 上推出新推理芯片（基于 Groq 技术）和 Vera Rubin 系统，继续巩固算力平台主导权；Benchmark 的 Bill Gurley 公开警告 AI 泡沫即将破裂，资本效率成为新焦点；Anthropic 编码 Agent 年收入已达 $2.5B，预计年底超 OpenAI；Snowflake Q4 靠 AI 驱动实现 30% 收入增长；OpenAI 据报正在削减边缘项目聚焦核心业务。",
+    "whyNow": "GTC 2026 keynote 已结束 48 小时，市场正在定价新硬件和新竞争格局；同时 VC 层面出现明显\"敲打泡沫\"信号，这是调整叙事和路线图的关键窗口。",
+    "signalLevel": "S",
+    "riskTemperature": "高",
+    "lastUpdatedAt": "2026-03-18 09:00 Asia/Shanghai",
+    "headlines": [
+      {
+        "title": "NVIDIA GTC 2026 主题演讲收官：新推理芯片（基于 Groq 技术）与 Vera Rubin 系统成最大亮点",
+        "summary": "NVIDIA 3 月 16 日 GTC 主题演讲中，Jensen Huang 公布基于从 AI 芯片初创公司 Groq 以约 200 亿美元获得的技术的新推理芯片，同时推出 Vera Rubin 系统；CNBC 报道称新推理芯片预计在 Q3 出货；GTC 大会吸引超过 30,000 名开发者参加。",
+        "insight": "NVIDIA 正在通过收购和技术整合快速补齐推理能力短板，目标是在推理算力市场与训练市场形成双轮驱动；推理成本下降会直接影响应用层的定价模型和采纳节奏。",
+        "opportunity": "今天内重新评估产品的推理成本结构，对比新推理芯片的成本优势，在方案中补充\"推理成本优化\"话术。",
+        "sources": [
+          "https://blogs.nvidia.com/blog/gtc-2026-news/",
+          "https://www.cnbc.com/2026/03/16/2-of-our-biggest-takeaways-from-nvidia-ceo-jensen-huangs-gtc-keynote-speech.html",
+          "https://www.reuters.com/world/asia-pacific/nvidia-ceo-set-reveal-new-chips-software-ai-megaconference-gtc-2026-03-16/"
+        ],
+        "sourceMeta": [
+          {
+            "url": "https://blogs.nvidia.com/blog/gtc-2026-news/",
+            "type": "official-search-verified"
+          },
+          {
+            "url": "https://www.cnbc.com/2026/03/16/2-of-our-biggest-takeaways-from-nvidia-ceo-jensen-huangs-gtc-keynote-speech.html",
+            "type": "media-search-verified"
+          }
+        ],
+        "lastVerifiedAt": "2026-03-18 09:00 Asia/Shanghai",
+        "whyNow": "GTC 主题演讲结束 48 小时后，市场正在消化新硬件和定价信号，应用层需要在本周内完成成本结构重估。",
+        "signalLevel": "S"
+      },
+      {
+        "title": "Benchmark VC Bill Gurley 警告 AI 泡沫即将破裂，资本效率成为新焦点",
+        "summary": "Fortune 3 月 17 日报道，Benchmark 知名 VC Bill Gurley 在接受 CNBC 采访时表示，AI 基础设施的巨额资本支出让他感到恐惧，更让他担忧的是那些尚未盈利的公司仍在进行大规模资本支出；此前 HSBC 估算 OpenAI 到 2030 年需要额外 2070 亿美元来支付微软和亚马逊的云计算费用。",
+        "insight": "这是顶级 VC 首次公开、系统性地\"敲打 AI 泡沫\"，意味着资本市场对 AI 公司的评估标准将从\"增长潜力\"转向\"资本效率和盈利路径\"；这会直接影响后续融资估值和投资者耐心。",
+        "opportunity": "对外融资和合作叙事要从\"增长故事\"切换到\"资本效率\"和\"单元经济\"，准备好 ROI 计算和成本回收周期。",
+        "sources": [
+          "https://fortune.com/2026/03/17/is-ai-bubble-bill-gurley-run-out-of-money/",
+          "https://timesofindia.indiatimes.com/technology/tech-news/popular-vc-bill-gurley-on-anthropic-and-openai-the-way-these-companies-are-run-is-scary-as-they-are-/articleshow/129618371.cms"
+        ],
+        "sourceMeta": [
+          {
+            "url": "https://fortune.com/2026/03/17/is-ai-bubble-bill-gurley-run-out-of-money/",
+            "type": "media-search-verified"
+          },
+          {
+            "url": "https://timesofindia.indiatimes.com/technology/tech-news/popular-vc-bill-gurley-on-anthropic-and-openai-the-way-these-companies-are-run-is-scary-as-they-are-/articleshow/129618371.cms",
+            "type": "media-search-verified"
+          }
+        ],
+        "lastVerifiedAt": "2026-03-18 09:00 Asia/Shanghai",
+        "whyNow": "这是 GTC 后第一个重要的市场情绪转折信号，VC 层面的\"泡沫警告\"会直接影响后续融资环境和估值逻辑。",
+        "signalLevel": "S"
+      },
+      {
+        "title": "Anthropic 编码 Agent 年收入预计年底超 OpenAI，收入增速成竞争新维度",
+        "summary": "Time 3 月 17 日报道，Anthropic 编码 Agent 年收入在 2025 年底已突破 10 亿美元，截至 2026 年 2 月已增长至 25 亿美元；行业监测机构 Epoch 和 SemiAnalysis 估计，按此增速 Anthropic 将在 2026 年底超过 OpenAI 的收入。",
+        "insight": "收入增速正在成为与模型能力并列的新竞争维度；Anthropic 用\"编码 Agent\"这个垂直场景实现了差异化突破，证明垂直化和产品化比通用模型更容易快速产生收入。",
+        "opportunity": "产品策略要从\"通用能力最强\"转向\"垂直场景收入最快\"，优先选择收入变现路径清晰的垂直场景深耕。",
+        "sources": [
+          "https://time.com/article/2026/03/11/anthropic-claude-disruptive-company-pentagon/"
+        ],
+        "sourceMeta": [
+          {
+            "url": "https://time.com/article/2026/03/11/anthropic-claude-disruptive-company-pentagon/",
+            "type": "media-search-verified"
+          }
+        ],
+        "lastVerifiedAt": "2026-03-18 09:00 Asia/Shanghai",
+        "whyNow": "收入军备竞赛已全面开打，今天不调整产品商业化路径，后面会更被动。",
+        "signalLevel": "S"
+      },
+      {
+        "title": "Snowflake Q4 靠 AI 驱动实现 30% 收入增长，430+ 新 AI 功能上线",
+        "summary": "Yahoo Finance 3 月 17 日报道，Snowflake 2026 财年 Q4 实现 30% 同比增长的产品收入增长，净新增客户增长 40%，并上线超过 430 个新 AI 功能；Snowflake 正在利用 AI 能力改变其投资叙事。",
+        "insight": "数据平台厂商正在通过 AI 功能实现差异化增长，证明\"AI 赋能数据平台\"是一条可行的商业化路径；这会加剧数据平台赛道的竞争。",
+        "opportunity": "面向数据平台场景时，要把\"AI 驱动的数据价值挖掘\"做成核心卖点，而不是只强调存储和计算。",
+        "sources": [
+          "https://finance.yahoo.com/news/did-snowflake-ai-powered-q4-061032435.html"
+        ],
+        "sourceMeta": [
+          {
+            "url": "https://finance.yahoo.com/news/did-snowflake-ai-powered-q4-061032435.html",
+            "type": "media-search-verified"
+          }
+        ],
+        "lastVerifiedAt": "2026-03-18 09:00 Asia/Shanghai",
+        "whyNow": "这是本周第一个重要的 SaaS 财报验证，AI 驱动的增长故事需要开始用收入数字来支撑。",
+        "signalLevel": "A"
+      },
+      {
+        "title": "OpenAI 据报削减边缘项目聚焦核心业务，WSJ 报道转向更务实路线",
+        "summary": "Reuters 3 月 17 日报道，OpenAI 正在削减边缘项目以聚焦核心业务；WSJ 此前的报道显示 OpenAI 在经历快速扩张后开始更加注重效率。",
+        "insight": "OpenAI 正在从\"规模扩张\"转向\"效率优先\"，这与 Bill Gurley 的泡沫警告形成呼应；头部厂商的策略调整意味着整个行业正在从\"烧钱换增长\"切换到\"效率换生存\"。",
+        "opportunity": "对外叙事要开始强调\"效率\"和\"聚焦\"，把\"能做多少事\"切换到\"用多低成本做多少事\"。",
+        "sources": [
+          "https://www.reuters.com/technology/artificial-intelligence/"
+        ],
+        "sourceMeta": [
+          {
+            "url": "https://www.reuters.com/technology/artificial-intelligence/",
+            "type": "media-search-verified"
+          }
+        ],
+        "lastVerifiedAt": "2026-03-18 09:00 Asia/Shanghai",
+        "whyNow": "这是 GTC 后头部厂商第一个明确的策略调整信号，\"聚焦核心\"会成为接下来行业的新关键词。",
+        "signalLevel": "A"
+      }
+    ],
+    "actions": [
+      "今天内把对外叙事从\"增长潜力\"切换到\"资本效率\"和\"单元经济\"，准备好 ROI 计算和成本回收周期。",
+      "重新评估产品的推理成本结构，对比 NVIDIA 新推理芯片的成本优势，在方案中补充\"推理成本优化\"话术。",
+      "产品策略从\"通用能力最强\"转向\"垂直场景收入最快\"，优先选择收入变现路径清晰的垂直场景深耕。"
+    ]
+  },
+  {
     "id": "2026-03-17-openai-microsoft-google-anthropic-nvidia",
     "date": "2026-03-17",
     "title": "AI 行业晨报：GTC keynote 把平台再定价推到台前，企业竞争进入“供给确定性 + 多模型 agent 入口 + 高敏准入”同步兑现日",
