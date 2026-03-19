@@ -1,5 +1,137 @@
 window.AI_DAILY_DATA = [
   {
+    "id": "2026-03-19-openai-microsoft-nvidia-anthropic-google",
+    "date": "2026-03-19",
+    "title": "AI 行业晨报：云独占开始松动，Agent 生产化与区域合规并行加速",
+    "company": "OpenAI / Microsoft / NVIDIA / Anthropic / Google / Linux Foundation",
+    "priority": "P0",
+    "tags": [
+      "云与基础设施",
+      "Agent生产化",
+      "企业收入",
+      "开源安全"
+    ],
+    "summary": "截至今天 9 点，行业信号已从“谁有更强模型”进一步转向“谁控制云与交付栈、谁能把 agent 跑到生产、谁能在安全与区域限制下继续扩张”。微软被曝考虑就 OpenAI-Amazon 超大云协议采取法律行动，说明头部联盟已进入利益再切分阶段；同时 NVIDIA 与微软继续把 agent 基础设施推向生产可运营状态，Anthropic 在企业收入上持续追近，Google/Workspace 则继续压缩独立内容 AI 的入口空间。",
+    "dailyConclusion": "今天最重要的结论是：AI 产业正在从模型竞赛切到“云绑定重构 + Agent 生产运维 + 企业化收入兑现”的三线硬战；对产品团队来说，接下来不是继续讲能力上限，而是讲可部署性、可替代性和单位经济。",
+    "dailyMainline": "微软与 OpenAI/Amazon 的云合作冲突，暴露头部模型公司与平台方之间的控制权再分配；NVIDIA 一边延续 GTC 对 agentic AI 与中国市场芯片适配的推进，一边继续放大基础设施杠杆；微软官方同步把 Foundry Agent Service 与 Observability 推到 GA，标志 agent 运维进入生产阶段；Anthropic 企业收入继续逼近 OpenAI，商业化重心更偏企业；Google 与大厂共同出资加固开源安全，也说明 AI 规模化之后，生态治理已成为交付前置项。",
+    "whyNow": "这些信号都发生在过去 24 小时内，而且分别落在云合同、基础设施、agent 运维、收入结构和开源治理五个关键层面，足以作为今天调整路线和叙事的依据。",
+    "signalLevel": "S",
+    "riskTemperature": "高",
+    "lastUpdatedAt": "2026-03-19 09:00 Asia/Shanghai",
+    "headlines": [
+      {
+        "title": "微软被曝考虑就 OpenAI-Amazon 500 亿美元云协议采取法律行动，独家云绑定开始松动",
+        "summary": "Reuters 3 月 18 日报道称，微软正在考虑就 OpenAI 与 Amazon 的 500 亿美元云协议采取法律行动，因该交易可能违反其与 OpenAI 的独家云协议。",
+        "insight": "这不是单一合同纠纷，而是头部模型公司开始重新分配云依赖与基础设施控制权的信号。平台方与模型方之间的“深度绑定”正在进入重新议价阶段。",
+        "opportunity": "产品与采购侧应尽快准备多云/多供应商预案，把主云、备云、迁移成本和 SLA 风险写进路线图。",
+        "sources": [
+          "https://www.reuters.com/technology/microsoft-weighs-legal-action-over-50-billion-amazon-openai-cloud-deal-ft-2026-03-18/"
+        ],
+        "sourceMeta": [
+          {
+            "url": "https://www.reuters.com/technology/microsoft-weighs-legal-action-over-50-billion-amazon-openai-cloud-deal-ft-2026-03-18/",
+            "type": "media-search-verified"
+          }
+        ],
+        "lastVerifiedAt": "2026-03-19 09:00 Asia/Shanghai",
+        "whyNow": "一旦头部联盟的云排他关系进入法律与合同博弈，企业客户本周就要重估底层依赖和议价空间。",
+        "signalLevel": "S"
+      },
+      {
+        "title": "微软在 GTC 上将 Foundry Agent Service 与 Observability 推向 GA，Agent 生产运维成显性战场",
+        "summary": "微软 3 月 16 日官方宣布，下一代 Foundry Agent Service 与 Foundry Control Plane 中的 Observability 已正式 GA，用于帮助组织在生产规模构建和运营 AI agents。",
+        "insight": "Agent 竞争已经从“能不能做 demo”转向“能不能被持续运营、监控、调试和管控”。生产运维能力正成为新的采购门槛。",
+        "opportunity": "优先补齐 agent 监控、任务回放、失败告警、成本观测和权限审计，把“可运营”作为方案卖点。",
+        "sources": [
+          "https://blogs.microsoft.com/blog/2026/03/16/microsoft-at-nvidia-gtc-new-solutions-for-microsoft-foundry-azure-ai-infrastructure-and-physical-ai/"
+        ],
+        "sourceMeta": [
+          {
+            "url": "https://blogs.microsoft.com/blog/2026/03/16/microsoft-at-nvidia-gtc-new-solutions-for-microsoft-foundry-azure-ai-infrastructure-and-physical-ai/",
+            "type": "official-search-verified"
+          }
+        ],
+        "lastVerifiedAt": "2026-03-19 09:00 Asia/Shanghai",
+        "whyNow": "GTC 周期内正式 GA，意味着本周企业客户对 agent 平台的判断标准会从能力展示切到生产稳定性。",
+        "signalLevel": "S"
+      },
+      {
+        "title": "NVIDIA 获准在华销售 H200，并准备可售中国市场的 Groq 芯片版本，区域适配优先级上升",
+        "summary": "Reuters 3 月 17-18 日报道称，NVIDIA 已获得北京方面批准销售 H200 AI 芯片，并正在准备可面向中国市场销售的 Groq 芯片版本。",
+        "insight": "NVIDIA 正把“全球统一产品”转向“按区域政策约束做可销售适配”，这说明算力厂商未来比拼的不只是性能，还有合规变体和区域交付能力。",
+        "opportunity": "涉及出海或多地区部署时，应把区域版硬件/模型可用性纳入架构设计，提前做市场分区方案。",
+        "sources": [
+          "https://www.reuters.com/world/china/chinese-authorities-approve-nvidias-h200-ai-chip-sales-source-says-2026-03-18/",
+          "https://www.reuters.com/world/china/nvidia-preparing-groq-chips-that-can-be-sold-chinese-market-sources-say-2026-03-17/"
+        ],
+        "sourceMeta": [
+          {
+            "url": "https://www.reuters.com/world/china/chinese-authorities-approve-nvidias-h200-ai-chip-sales-source-says-2026-03-18/",
+            "type": "media-search-verified"
+          },
+          {
+            "url": "https://www.reuters.com/world/china/nvidia-preparing-groq-chips-that-can-be-sold-chinese-market-sources-say-2026-03-17/",
+            "type": "media-search-verified"
+          }
+        ],
+        "lastVerifiedAt": "2026-03-19 09:00 Asia/Shanghai",
+        "whyNow": "区域限制下的供给恢复与产品适配，直接影响未来几周企业对中国及跨境 AI 基础设施的部署判断。",
+        "signalLevel": "S"
+      },
+      {
+        "title": "Anthropic 在企业收入维度继续逼近 OpenAI，商业化竞争重心加速偏向高价值客户",
+        "summary": "Axios 3 月 18 日报道称，Anthropic 在关键企业收入维度反超 OpenAI；报道同时提到 OpenAI 预计全年收入约 250 亿美元，Anthropic 约 190 亿美元，但企业侧势头更强。",
+        "insight": "这说明头部竞争不再只是总收入，而是“谁拿到更厚、更稳定的企业预算”。企业收入质量正在取代纯用户规模，成为估值与路线的新锚。",
+        "opportunity": "产品策略应更早围绕高客单价场景、部署安全性和可采购性来设计，而非只追求大众流量。",
+        "sources": [
+          "https://www.axios.com/2026/03/18/ai-enterprise-revenue-anthropic-openai",
+          "https://time.com/article/2026/03/11/anthropic-claude-disruptive-company-pentagon/"
+        ],
+        "sourceMeta": [
+          {
+            "url": "https://www.axios.com/2026/03/18/ai-enterprise-revenue-anthropic-openai",
+            "type": "media-search-verified"
+          },
+          {
+            "url": "https://time.com/article/2026/03/11/anthropic-claude-disruptive-company-pentagon/",
+            "type": "media-search-verified"
+          }
+        ],
+        "lastVerifiedAt": "2026-03-19 09:00 Asia/Shanghai",
+        "whyNow": "企业预算正在成为最关键的胜负手，今天不调整商业化优先级，后续会更难追。",
+        "signalLevel": "A"
+      },
+      {
+        "title": "Linux Foundation 获 1250 万美元资助加固开源安全，AI 大厂开始为生态外部性买单",
+        "summary": "Help Net Security 3 月 17-18 日报道，Linux Foundation 获得来自 Anthropic、OpenAI、Google、Microsoft 等公司总计 1250 万美元资助，用于强化开源软件安全与维护者支持。",
+        "insight": "当 AI 规模化依赖开源生态时，大厂开始不得不为“安全债”和维护成本付费。未来企业级 AI 交付会更强调供应链健康，而不仅是模型能力。",
+        "opportunity": "在企业方案中把 SBOM、依赖审计、开源许可证和安全维护响应机制前置，形成可信交付材料。",
+        "sources": [
+          "https://www.helpnetsecurity.com/2026/03/17/linux-foundation-12-5-million-grants/",
+          "https://www.theregister.com/2026/03/18/linux_foundation_ai_slop_defense/"
+        ],
+        "sourceMeta": [
+          {
+            "url": "https://www.helpnetsecurity.com/2026/03/17/linux-foundation-12-5-million-grants/",
+            "type": "media-search-verified"
+          },
+          {
+            "url": "https://www.theregister.com/2026/03/18/linux_foundation_ai_slop_defense/",
+            "type": "media-search-verified"
+          }
+        ],
+        "lastVerifiedAt": "2026-03-19 09:00 Asia/Shanghai",
+        "whyNow": "AI 交付越进入企业与关键行业，供应链安全越会被采购和审计前置到同一层级。",
+        "signalLevel": "A"
+      }
+    ],
+    "actions": [
+      "今天内补一版多云/多供应商依赖看板，明确主云、备云、迁移成本与合同风险。",
+      "把 agent 方案从“可用”升级到“可运营”：补齐观测、告警、失败回放、权限审计与成本监控。",
+      "对企业版材料增加供应链安全章节，至少覆盖依赖审计、开源风险、区域合规与替代方案。"
+    ]
+  },
+  {
     "id": "2026-03-18-openai-microsoft-google-anthropic-nvidia",
     "date": "2026-03-18",
     "title": "AI 行业晨报：GTC 2026 后续效应显现，VC 泡沫警告与收入军备竞赛同步上演",
