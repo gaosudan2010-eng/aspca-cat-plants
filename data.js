@@ -1,5 +1,142 @@
 window.AI_DAILY_DATA = [
   {
+    "id": "2026-03-20-openai-nvidia-microsoft-anthropic-google",
+    "date": "2026-03-20",
+    "title": "AI 行业晨报：编码工具并购升温，推理基础设施与企业入口竞争同步加码",
+    "company": "OpenAI / NVIDIA / Microsoft / Anthropic / Google / Linux Foundation",
+    "priority": "P0",
+    "tags": [
+      "编码Agent",
+      "推理基础设施",
+      "企业入口",
+      "开源安全"
+    ],
+    "summary": "截至今天 9 点，行业主线继续从“模型更强”切向“谁控制开发者入口、谁拿住推理基础设施、谁能把 agent 跑成企业级收入”。OpenAI 宣布收购 Python 工具公司 Astral，说明编码工作流正在被头部模型厂商直接吞入产品栈；NVIDIA 在 GTC 后继续把 AI 芯片收入机会上调到 2027 年至少 1 万亿美元，推理市场已被正式定义为核心战场；微软则把 Foundry 与 agent 生产运维能力继续前推，Anthropic 在企业收入与国际扩张上保持强势，Google 持续把 Gemini 固化进原生创作入口。",
+    "dailyConclusion": "今天最重要的结论是：AI 竞争已经从“谁的模型更强”进一步转向“谁能占住开发者工作流 + 推理供给 + 企业原生入口”三层控制权；对产品团队来说，下一步比拼的是入口锁定、生产化能力和可持续收入结构。",
+    "dailyMainline": "OpenAI 用收购 Astral 直接强化 Codex 与 Python 开发者工具栈，标志编码 agent 正从调用模型升级为控制完整开发链路；NVIDIA 延续 GTC 节奏，把推理芯片机会明确抬到至少 1 万亿美元；微软继续把 Foundry Agent Service、Observability 和 Azure AI 基础设施推向生产可运营阶段；Anthropic 一边凭企业收入优势逼近 OpenAI，一边通过全球化与云容量扩张加固交付能力；Google 则继续把 Gemini 深嵌 Docs/Sheets/Slides/Drive，把内容 AI 竞争压缩到“原生入口内的协作与执行”。",
+    "whyNow": "这些信号都集中在过去 24-96 小时内，分别落在并购、算力、agent 运维、企业收入与原生入口五个层面，足以作为今天调整产品路线与对外叙事的依据。",
+    "signalLevel": "S",
+    "riskTemperature": "高",
+    "lastUpdatedAt": "2026-03-20 09:00 Asia/Shanghai",
+    "headlines": [
+      {
+        "title": "OpenAI 宣布收购 Astral，编码工作流正被头部模型厂商直接并入产品栈",
+        "summary": "OpenAI 3 月 19 日宣布将收购开源 Python 工具公司 Astral，以加速 Codex 增长并增强下一代 Python 开发者工具；Reuters 同日报道称，此举意在对抗 Anthropic 并扩大其在 AI 编码工具市场的份额。",
+        "insight": "这不是普通人才或功能补强，而是模型厂商开始直接控制开发者最日常的工具入口。编码 agent 的竞争，正在从“谁代码生成更强”转向“谁拥有解释器、依赖管理、执行与反馈闭环”。",
+        "opportunity": "如果产品涉及开发者场景，应尽快把代码生成、运行、修复、依赖管理和项目上下文打成闭环，而不是只做单点生成。",
+        "sources": [
+          "https://openai.com/index/openai-to-acquire-astral/",
+          "https://www.reuters.com/technology/openai-buy-python-toolmaker-astral-take-anthropic-2026-03-19/"
+        ],
+        "sourceMeta": [
+          {
+            "url": "https://openai.com/index/openai-to-acquire-astral/",
+            "type": "official-search-verified"
+          },
+          {
+            "url": "https://www.reuters.com/technology/openai-buy-python-toolmaker-astral-take-anthropic-2026-03-19/",
+            "type": "media-search-verified"
+          }
+        ],
+        "lastVerifiedAt": "2026-03-20 09:00 Asia/Shanghai",
+        "whyNow": "并购在今天落地，意味着编码入口争夺已从模型 API 延伸到开发者日常工具链，本周就会影响产品路线与合作判断。",
+        "signalLevel": "S"
+      },
+      {
+        "title": "NVIDIA 把 AI 芯片机会抬到 2027 年至少 1 万亿美元，推理已被正式定义为核心战场",
+        "summary": "Reuters 3 月 16-17 日报道称，NVIDIA 表示其 AI 芯片收入机会到 2027 年可能至少达到 1 万亿美元，并明确强调 inference inflection 已经到来。",
+        "insight": "这说明行业不再把推理当训练后的附属环节，而是未来两年的主要商业化引擎。应用层定价、部署节奏和单位经济，都会被推理成本与供给能力重写。",
+        "opportunity": "面向企业客户的方案，应把任务分级、推理成本阈值、主备算力路由和延迟 SLA 放到前台，形成“可规模化交付”的明确卖点。",
+        "sources": [
+          "https://www.reuters.com/world/asia-pacific/nvidia-ceo-set-reveal-new-chips-software-ai-megaconference-gtc-2026-03-16/",
+          "https://www.reuters.com/world/china/nvidia-preparing-groq-chips-that-can-be-sold-chinese-market-sources-say-2026-03-17/"
+        ],
+        "sourceMeta": [
+          {
+            "url": "https://www.reuters.com/world/asia-pacific/nvidia-ceo-set-reveal-new-chips-software-ai-megaconference-gtc-2026-03-16/",
+            "type": "media-search-verified"
+          },
+          {
+            "url": "https://www.reuters.com/world/china/nvidia-preparing-groq-chips-that-can-be-sold-chinese-market-sources-say-2026-03-17/",
+            "type": "media-search-verified"
+          }
+        ],
+        "lastVerifiedAt": "2026-03-20 09:00 Asia/Shanghai",
+        "whyNow": "GTC 后的市场解读已经明确切到推理与交付效率，今天不重估成本结构，后续产品叙事会失焦。",
+        "signalLevel": "S"
+      },
+      {
+        "title": "微软继续把 Foundry Agent Service 与 Observability 前推，agent 生产运维成为采购门槛",
+        "summary": "微软 3 月 16 日官方宣布在 GTC 周期扩展 Microsoft Foundry 能力，强调可在 NVIDIA 加速器和开放模型上构建、部署并运营生产级 AI agents，并将 Foundry Agent Service 与可观测能力继续推向企业落地。",
+        "insight": "企业购买 agent 平台时，标准已从“能不能做 demo”切到“能不能部署、监控、调试、审计和规模化运营”。",
+        "opportunity": "优先补齐 agent 任务回放、失败告警、权限审计、成本观测与人机接管点，把“生产可运营”做成核心竞争力。",
+        "sources": [
+          "https://blogs.microsoft.com/blog/2026/03/16/microsoft-at-nvidia-gtc-new-solutions-for-microsoft-foundry-azure-ai-infrastructure-and-physical-ai/"
+        ],
+        "sourceMeta": [
+          {
+            "url": "https://blogs.microsoft.com/blog/2026/03/16/microsoft-at-nvidia-gtc-new-solutions-for-microsoft-foundry-azure-ai-infrastructure-and-physical-ai/",
+            "type": "official-search-verified"
+          }
+        ],
+        "lastVerifiedAt": "2026-03-20 09:00 Asia/Shanghai",
+        "whyNow": "GTC 周期把 agent 运维标准显性化，本周企业客户会更快把生产稳定性列为采购前提。",
+        "signalLevel": "S"
+      },
+      {
+        "title": "Anthropic 在企业收入和全球交付上持续逼近，头部竞争重心更偏高价值客户",
+        "summary": "Axios 3 月 18 日称 Anthropic 在关键企业收入维度反超 OpenAI；Anthropic 官方近期则披露 run-rate revenue 达 140 亿美元，并强调其正扩大全球企业交付与容量布局。",
+        "insight": "头部公司竞争焦点正在从总用户规模转向高质量企业预算、部署能力与长期续费结构。企业收入质量，正在成为估值和路线的新锚。",
+        "opportunity": "产品策略应优先围绕高客单价、强安全、可采购和可交付场景设计，而不是继续押注泛流量增长。",
+        "sources": [
+          "https://www.axios.com/2026/03/18/ai-enterprise-revenue-anthropic-openai",
+          "https://www.anthropic.com/news/anthropic-raises-30-billion-series-g-funding-380-billion-post-money-valuation"
+        ],
+        "sourceMeta": [
+          {
+            "url": "https://www.axios.com/2026/03/18/ai-enterprise-revenue-anthropic-openai",
+            "type": "media-search-verified"
+          },
+          {
+            "url": "https://www.anthropic.com/news/anthropic-raises-30-billion-series-g-funding-380-billion-post-money-valuation",
+            "type": "official-search-verified"
+          }
+        ],
+        "lastVerifiedAt": "2026-03-20 09:00 Asia/Shanghai",
+        "whyNow": "企业预算已成为最关键胜负手，今天不调整商业化优先级，后续会更难追。",
+        "signalLevel": "A"
+      },
+      {
+        "title": "Google 继续吞掉内容入口，Linux Foundation 获 1250 万美元补强开源安全，生态治理前置",
+        "summary": "Google Workspace 3 月 10 日宣布把 Gemini 变成 Docs、Sheets、Slides 和 Drive 中贯穿创作过程的协作伙伴；Linux Foundation 3 月 17 日宣布获 1250 万美元资助推进 OpenSSF 与 Alpha-Omega，支持开源安全与维护者。",
+        "insight": "一边是原生办公入口持续吞掉内容 AI 的使用时长，另一边是 AI 大厂开始为开源安全债与维护成本付费。应用层若只盯生成能力，会同时失去入口和可信交付能力。",
+        "opportunity": "独立产品应把价值前移到审阅、流程触发、资产沉淀和安全治理材料；企业方案里要提前加入 SBOM、依赖审计和开源维护响应机制。",
+        "sources": [
+          "https://workspace.google.com/blog/product-announcements/reimagining-content-creation",
+          "https://www.linuxfoundation.org/press/linux-foundation-announces-12.5-million-in-grant-funding-from-leading-organizations-to-advance-open-source-security"
+        ],
+        "sourceMeta": [
+          {
+            "url": "https://workspace.google.com/blog/product-announcements/reimagining-content-creation",
+            "type": "official-search-verified"
+          },
+          {
+            "url": "https://www.linuxfoundation.org/press/linux-foundation-announces-12.5-million-in-grant-funding-from-leading-organizations-to-advance-open-source-security",
+            "type": "official-search-verified"
+          }
+        ],
+        "lastVerifiedAt": "2026-03-20 09:00 Asia/Shanghai",
+        "whyNow": "原生入口与供应链治理在同一周同时升温，说明“被集成”与“不可审计”会一起成为独立产品风险。",
+        "signalLevel": "A"
+      }
+    ],
+    "actions": [
+      "今天内补一版开发者工作流路线图，把代码生成、执行、依赖管理、修复回环和权限边界画成一张闭环图。",
+      "重做企业版 agent 方案：增加任务回放、失败告警、成本观测、SLA 和人工接管点，明确生产可运营标准。",
+      "在对外材料中同时加入推理成本看板和开源安全章节，避免只讲模型能力却忽略交付与治理。"
+    ]
+  },
+  {
     "id": "2026-03-19-openai-microsoft-nvidia-anthropic-google",
     "date": "2026-03-19",
     "title": "AI 行业晨报：云独占开始松动，Agent 生产化与区域合规并行加速",
